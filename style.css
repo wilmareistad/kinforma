@@ -40,11 +40,15 @@ body {
 h2 {
   font-size: 36px;
   font-weight: 600;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px;
 }
 
 h3 {
     font-size: 24px;
-    font-weight: 110
+    font-weight: 110;
+    margin: 16px;
+}
+
+p {
+  margin: 16px;
 }
