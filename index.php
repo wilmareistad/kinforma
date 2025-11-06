@@ -25,4 +25,5 @@ I CSS/text: bara kopiera in ø direkt-->
 
 <?php
 
+require __DIR__ . '/newsletter.php';
 require __DIR__ . '/footer.php';
