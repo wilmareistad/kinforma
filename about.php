@@ -1,3 +1,7 @@
 <?php
 
-//antingen section med läs mer som dyker upp under, eller en egen sida vid klick på läs mer
+require __DIR__ . "/header.php"
+
+?>
+
+<h2>VÅR HISTORIA</h2>
