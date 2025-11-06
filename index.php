@@ -1,6 +1,6 @@
 <?php
-
-require 'data.php';
+require __DIR__ . '/header.php';
+require __DIR__ . '/data.php';
 ?>
 
 <!--Se till att fonten ni använder stödjer ø-tecknet (de flesta moderna fonter gör det)
@@ -22,3 +22,7 @@ I CSS/text: bara kopiera in ø direkt-->
         <?php } ?>
     </div>
 </div>
+
+<?php
+
+require __DIR__ . '/footer.php';
