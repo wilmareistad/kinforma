@@ -22,7 +22,15 @@ button {
     cursor: pointer;
 }
 
-h3 {
-    font-size: 24px;
-    font-weight: 110
+
+
+.invite-box p {
+    margin: 0;
+}
+
+
+.invite-box h3 {
+    margin-left: 0;
+    margin-right: 0;
+
 }
