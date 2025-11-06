@@ -32,6 +32,11 @@ body {
   gap: 212px;
   flex-shrink: 0;
 }
+h2 {
+  font-size: 36px;
+  font-weight: 110
+}
+
 h3 {
     font-size: 24px;
     font-weight: 110
