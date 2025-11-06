@@ -1,5 +1,10 @@
 .team {
-    width: 390px;
+    width: 100vw;
     height: 528px;
     object-fit: cover;
+}
+
+.smart-textil {
+    width: 100vw;
+    height: 400px;
 }
