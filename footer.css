@@ -1,3 +1,14 @@
+/* <weight>: Use a value from 100 to 700
+ <uniquifier>: Use a unique and descriptive class name
+
+ .ibm-plex-sans-<uniquifier> {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}*/
+
 footer {
     width: 390px;
     height: 678px;
@@ -31,8 +42,8 @@ footer {
 
 footer h4 {
 
-    color: var(--Mrkgrn, #1F2B28);
-    font-family: "IBM Plex Sans";
+    color: var(--darkgreen, #1F2B28);
+    font-family: var(--font-base);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -43,8 +54,8 @@ footer h4 {
 
 footer p {
     align-self: stretch;
-    color: var(--Mrkgrn, #1F2B28);
-    font-family: "IBM Plex Sans";
+    color: var(--darkgreen, #1F2B28);
+    font-family: var(--font-base);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -69,7 +80,7 @@ footer p {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
-    fill: var(--Mellangrn, #6F7770);
+    fill: var(--midgreen, #6F7770);
 }
 
 .footer-nav-container {
@@ -81,8 +92,8 @@ footer p {
 }
 
 footer h5 {
-    color: var(--Mrkgrn, #1F2B28);
-    font-family: "IBM Plex Sans";
+    color: var(--darkgreen, #1F2B28);
+    font-family: var(--font-base);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -103,8 +114,8 @@ footer h5 {
 .hos-oss-box p, .annat-box p {
     align-self: stretch;
     margin: 0;
-    color: var(--Mellangrn, #6F7770);
-    font-family: "IBM Plex Sans";
+    color: var(--midgreen, #6F7770);
+    font-family: var(--font-base);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

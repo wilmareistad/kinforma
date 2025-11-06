@@ -2,7 +2,7 @@
     <section class="footer-container">
         <div class="content-box">
             <div class="footer-header-box">
-                <h4>Kinforma</h4>
+                <h4>KINFORMA</h4>
                 <p>Upplev en ny dimension av mode med vår senaste kollektion. Designad av dig, drivet av teknik, skapat för planeten.</p>
             </div>
 
