@@ -13,7 +13,7 @@ I CSS/text: bara kopiera in ø direkt-->
         <?php
         foreach ($products as $product => $value) { ?>
             <a href="product-page.php?product=<?= $product; ?>" class="product-link">
-                <section>
+                <section class="product">
                     <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
                     <p><?= $product; ?></p>
 
