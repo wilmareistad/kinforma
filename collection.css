@@ -93,3 +93,7 @@ filter img {
     height: 215px;
     align-self: stretch;
 }
+
+.product-card a {
+    text-decoration: none;
+}
