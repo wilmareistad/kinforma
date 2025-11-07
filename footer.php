@@ -17,10 +17,18 @@
         <div class="footer-nav-container">
             <div class="hos-oss-box">
                 <h5>Hos oss</h5>
-                <p>Hem</p>
-                <p>Om oss</p>
-                <p>Hållbarhet</p>
-                <p>THØ Kollektionen</p>
+                <a href="index.php">
+                    <p>Hem</p>
+                </a>
+                <a href="about.php">
+                    <p>Om oss</p>
+                </a>
+                <a href="sustainability.php">
+                    <p>Hållbarhet</p>
+                </a>
+                <a href="collection.php">
+                    <p>THØ Kollektionen</p>
+                </a>
             </div>
 
             <div class="annat-box">

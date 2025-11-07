@@ -20,5 +20,3 @@ require __DIR__ . "/header.php";
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
 ?>
-
-sustainability.php
