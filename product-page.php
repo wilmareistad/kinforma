@@ -1,6 +1,10 @@
 <?php
+
 require __DIR__ . "/header.php";
 require __DIR__ . "/data.php";
+=======
+require 'data.php';
+
 
 $productName = $_GET['product'];
 $product = $products[$productName];
@@ -20,8 +24,12 @@ $product = $products[$productName];
     <img src="<?= $product['img5']; ?>" alt="<?= $productName; ?> img5" />
 </div>
 
+
 <!--Loopa igenom array i data.php för info om enskilda produkter
 
 <?php
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
+=======
+<!--Loopa igenom array i data.php för info om enskilda produkter
+>>>>>>> main

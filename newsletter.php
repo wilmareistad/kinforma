@@ -1,3 +1,4 @@
+
 <!-- länken till css ska tas bort när den är kopplad till index -->
 <link rel="stylesheet" href="newsletter.css">
 <?php
@@ -16,3 +17,6 @@ if (isset($_POST['email']) && $_POST['email']) {
         <button type="submit">Gå med</button>
     </form>
 </div>
+
+<?php
+
