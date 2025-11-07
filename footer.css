@@ -123,6 +123,10 @@ footer h5 {
     letter-spacing: -0.48px;
 }
 
+.hos-oss-box a {
+    text-decoration: none;
+}
+
 .annat-box {
     display: flex;
     width: 90px;

@@ -1,5 +1,6 @@
 <?php
-require 'data.php';
+require __DIR__ . "/header.php";
+require __DIR__ . "/data.php";
 
 $productName = $_GET['product'];
 $product = $products[$productName];
@@ -20,3 +21,7 @@ $product = $products[$productName];
 </div>
 
 <!--Loopa igenom array i data.php för info om enskilda produkter
+
+<?php
+require __DIR__ . "/newsletter.php";
+require __DIR__ . "/footer.php";

@@ -45,7 +45,7 @@ p {
 
 .hero-container {
   display: flex;
-  width: 390px;
+  /*width: 390px;*/
   height: 633px;
   flex-direction: column;
   align-items: flex-start;
@@ -108,7 +108,7 @@ p {
 
 .about {
   display: flex;
-  width: 390px;
+  /*width: 390px;*/
   padding: 0 16px;
   flex-direction: column;
   align-items: flex-start;
@@ -127,7 +127,7 @@ p {
 
 .THO {
   display: flex;
-  width: 390px;
+  /*width: 390px;*/
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
