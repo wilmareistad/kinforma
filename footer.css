@@ -44,7 +44,7 @@ footer h4 {
 
     color: var(--darkgreen, #1F2B28);
     font-family: var(--font-base);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -56,7 +56,7 @@ footer p {
     align-self: stretch;
     color: var(--darkgreen, #1F2B28);
     font-family: var(--font-base);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -94,7 +94,7 @@ footer p {
 footer h5 {
     color: var(--darkgreen, #1F2B28);
     font-family: var(--font-base);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -116,7 +116,7 @@ footer h5 {
     margin: 0;
     color: var(--midgreen, #6F7770);
     font-family: var(--font-base);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
