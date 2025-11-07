@@ -27,17 +27,6 @@ body {
   font-family: var(--font-base);
 }
 
-.product img {
-  display: flex;
-  width: 393px;
-  height: 433px;
-  padding: 55px 65px;
-  flex-direction: column;
-  align-items: center;
-  gap: 212px;
-  flex-shrink: 0;
-}
-
 h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -69,6 +58,7 @@ p {
   flex-shrink: 0;
   align-self: stretch;
   background: var(--darkgreen);
+  object-fit: cover;
 }
 
 .hero-text {
@@ -135,4 +125,59 @@ p {
   letter-spacing: -1.08px;
 }
 
+.THO {
+  display: flex;
+  width: 390px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.THO-explore {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  gap: 4px;
+}
+
+.THO-explore h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--darkgreen, #1F2B28);
+  font-family: var(--font-base);
+  font-size: 1.5rem; /*2rem för stor för en rad*/
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: -0.72px;
+}
+
+.THO-explore img {
+  width: 25px;
+  height: 14px;
+}
+
+.product-carousel img {
+  height: 312px;
+  align-self: stretch;
+  background: var(--darkgreen);
+}
+
+.product-carousel {
+  width: 100vw;
+  display: flex;
+  gap: 25px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
 

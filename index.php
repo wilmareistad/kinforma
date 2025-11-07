@@ -7,7 +7,7 @@ require __DIR__ . '/data.php';
 Om ni ska ha det på webben, kan ni använda HTML-koden: &oslash; för ø eller &Oslash; för Ø
 I CSS/text: bara kopiera in ø direkt-->
 <section class="hero-container">
-    <img src="" alt="Hero img">
+    <img src="assets/Simon.Snow_Scene.Preview.png" alt="Hero img">
     <div class="hero-text">
         <p class="spring">Vår 2026</p>
         <p class="collection-name">Th&oslash;</p>
@@ -20,21 +20,28 @@ I CSS/text: bara kopiera in ø direkt-->
     <p>Upplev en ny dimension av mode med vår senaste kollektion. Designad av dig, drivet av teknik, skapat för planeten.</p>
 </section>
 
-<div class="products-container">
-    <h1>Thø</h1>
-    <div class="list-box-container">
-        <?php
-        foreach ($products as $product => $value) { ?>
-            <a href="product-page.php?product=<?= $product; ?>" class="product-link">
+<section class="THO">
+    <div class="products-container">
+        <div class="THO-explore">
+            <h3>Utforska TH&Oslash kollektionen</h3>
+            <a href="collection.php"><img src="/assets/Pil.svg"></a>
+        </div>
+
+        <div class="product-carousel">
+            <?php
+            foreach ($products as $product => $value) { ?>
                 <section class="product">
                     <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
-                    <p><?= $product; ?></p>
-
+                    <div class="product-info">
+                        <p><?= $product; ?></p>
+                        <p>><?= $value['prize']; ?></p>
+                    </div>
                 </section>
-            </a>
-        <?php } ?>
+            <?php } ?>
+        </div>
     </div>
-</div>
+</section>
+
 
 <?php
 
