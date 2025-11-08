@@ -1,5 +1,6 @@
 <?php
 
+
 require __DIR__ . "/header.php";
 
 ?>
@@ -24,3 +25,5 @@ require __DIR__ . "/header.php";
 <?php
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
+
+//antingen section med läs mer som dyker upp under, eller en egen sida vid klick på läs mer

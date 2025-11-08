@@ -1,4 +1,5 @@
 <?php
+
 require __DIR__ . "/header.php";
 ?>
 <section class="sustainability-hero">
@@ -20,3 +21,7 @@ require __DIR__ . "/header.php";
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
 ?>
+=======
+
+//Hållbarhet - info om hur företaget arbetar med detta
+
