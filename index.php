@@ -51,7 +51,8 @@ I CSS/text: bara kopiera in ø direkt-->
 
 require __DIR__ . '/newsletter.php';
 require __DIR__ . '/footer.php';
-=======
+
+/*=======
 
 <div class="products-container">
     <h1>Thø</h1>
@@ -68,4 +69,4 @@ require __DIR__ . '/footer.php';
         <?php } ?>
     </div>
 </div>
->>>>>>> main
+>>>>>>> main*/

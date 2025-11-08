@@ -2,8 +2,8 @@
 
 require __DIR__ . "/header.php";
 require __DIR__ . "/data.php";
-=======
-require 'data.php';
+/*=======
+require 'data.php';*/
 
 
 $productName = $_GET['product'];
@@ -30,6 +30,7 @@ $product = $products[$productName];
 <?php
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
-=======
-<!--Loopa igenom array i data.php för info om enskilda produkter
->>>>>>> main
+
+/*=======
+Loopa igenom array i data.php för info om enskilda produkter
+>>>>>>> main*/
