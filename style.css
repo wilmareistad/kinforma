@@ -70,7 +70,7 @@ p {
 
 .spring {
   color: var(--background-color, #FFFDF8);
-  font-family: "IBM Plex Sans";
+  font-family: var(--font-base);
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -83,7 +83,7 @@ p {
 
 .collection-name {
   color: var(--background-color, #FFFDF8);
-  font-family: "IBM Plex Serif";
+  font-family: var(--font-base);
   font-size: 6rem;
   font-style: italic;
   font-weight: 400;
@@ -96,7 +96,7 @@ p {
 
 .future {
   color: var(--background-color, #FFFDF8);
-  font-family: "IBM Plex Sans";
+  font-family: var(--font-base);
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;

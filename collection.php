@@ -28,24 +28,27 @@ require __DIR__ . "/data.php";
             </div>
         </div>
     </section>
-</div>
 
-<section class="product-container">
-    <div class="product-card">
-        <?php
-        foreach ($products as $product => $value) { ?>
-            <a href="product-page.php?product=<?= $product; ?>" class="product-link">
-                <section class="product">
-                    <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
-                    <p><?= $product; ?></p>
-                    <p><?= $value['prize']; ?></p>
-                </section>
-            </a>
-        <?php
-        }
-        ?>
-    </div>
-</section>
+
+    <section class="product-container">
+        <div class="product-card">
+            <?php
+            foreach ($products as $product => $value) { ?>
+                <a href="product-page.php?product=<?= $product; ?>" class="product-link">
+                    <section class="product">
+                        <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
+                        <div class="product-info">
+                            <p class="name"><?= $product; ?></p>
+                            <p class="prize"><?= $value['prize']; ?></p>
+                        </div>
+                    </section>
+                </a>
+            <?php
+            }
+            ?>
+        </div>
+    </section>
+</div>
 
 <?php
 require __DIR__ . "/newsletter.php";

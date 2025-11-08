@@ -34,7 +34,7 @@ I CSS/text: bara kopiera in ø direkt-->
                     <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
                     <div class="product-info">
                         <p><?= $product; ?></p>
-                        <p>><?= $value['prize']; ?></p>
+                        <p><?= $value['prize']; ?></p>
                     </div>
                 </section>
             <?php } ?>
