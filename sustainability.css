@@ -1,0 +1,40 @@
+/* .sustainability {
+color: var(--background-color, #FFFDF8);
+text-align: center;
+font-family: "IBM Plex Serif";
+font-size: 4rem;
+font-style: italic;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: -3.84px;
+position: absolute;
+top: 0px;
+margin: 50px;
+}  */
+
+.sustainability-hero {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.team {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sustainability {
+  position: absolute;
+  bottom: 83px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFDF8;
+  text-align: center;
+  font-family: "IBM Plex Serif";
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -1.92px;
+}
+

@@ -1,10 +1,11 @@
 <?php
-
 require __DIR__ . "/header.php";
 require __DIR__ . "/data.php";
 ?>
+<link rel="stylesheet" href="sustainability.css">
+
 <section class="sustainability-hero">
-    <p>Hållbarhet</p>
+    <p class="sustainability">Hållbarhet</p>
     <img class="team" src="https://qualityoutlet.com/wp-content/uploads/2025/03/RevolutionRace.2.1.jpg" alt="bild på teamet">
 </section>
 <section>
