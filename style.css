@@ -186,3 +186,77 @@ p {
   margin: 5px;
 }
 
+.name {
+    color: var(--darkgreen, #1F2B28);
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.prize {
+    color: var(--darkgreen, #1F2B28);
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.sustainability-container {
+  display: flex;
+  /*width: 393px;*/
+  /*height: 433px;*/
+  padding: 55px 65px;
+  flex-direction: column;
+  align-items: center;
+  gap: 212px;
+  flex-shrink: 0;
+}
+
+/*.sustainability-container img {
+  min-height: 433px;
+}*/
+
+.sustainability-container h3 {
+  width: 261px;
+  color: var(--background-color, #FFFDF8);
+  text-align: center;
+/* Mobil/H3/H3 serif */
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  position: absolute;
+}
+
+.p-frame {
+  position: absolute;
+  display: flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--background-color);
+}
+
+.p-frame p {
+  color: var(--background-color);
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.sust-text {
+  position: absolute;
+  display: flex;
+}
+
+

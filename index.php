@@ -37,8 +37,8 @@ I CSS/text: bara kopiera in ø direkt-->
                 <section class="product">
                     <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
                     <div class="product-info">
-                        <p><?= $product; ?></p>
-                        <p><?= $value['prize']; ?></p>
+                        <p class="name"><?= $product; ?></p>
+                        <p class="prize"><?= $value['prize']; ?></p>
                     </div>
                 </section>
             <?php } ?>
@@ -46,6 +46,16 @@ I CSS/text: bara kopiera in ø direkt-->
     </div>
 </section>
 
+<section class="sustainability-container">
+    <img src="/assets/Hero_PW1_Gräslandskap.png" alt="Hållbarhet">
+    <div class="sust-text">
+        <h3>Innovation till och för framtiden.</h3>
+        <div class="p-frame">
+            <p>Våra arbetssätt</p>
+        </div>
+    </div>
+
+</section>
 
 <?php
 
