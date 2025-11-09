@@ -13,6 +13,7 @@ require __DIR__ . '/data.php';
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="collection.css">
   <link rel="stylesheet" href="product-page.css">
+  <link rel="stylesheet" href="sustainibility.css">
   <link rel="stylesheet" href="newsletter.css">
   <link rel="stylesheet" href="footer.css">
 </head>
