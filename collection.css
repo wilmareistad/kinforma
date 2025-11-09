@@ -1,4 +1,5 @@
 .collection-container {
+    background-color: var(--background-color);
     display: flex;
     /*width: 390px;*/
     min-height: 1265px; /*tidigare height*/
@@ -38,6 +39,7 @@
 }
 
 .search-form input[type="text"] {
+    background-color: var(--background-color);
     color: var(--darkgreen, #1F2B28);
     font-family: var(--font-base);
     font-size: 16px;
@@ -187,7 +189,7 @@ filter img {
 
 .name {
     color: var(--darkgreen, #1F2B28);
-    font-family: "IBM Plex Sans";
+    font-family: var(--font-base);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -197,7 +199,7 @@ filter img {
 
 .prize {
     color: var(--darkgreen, #1F2B28);
-    font-family: "IBM Plex Sans";
+    font-family: var(--font-base);
     font-size: 16px;
     font-style: normal;
     font-weight: 300;

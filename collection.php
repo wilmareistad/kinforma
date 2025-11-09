@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__ . "/header.php";
-require __DIR__ . "/data.php";
+require __DIR__ . '/header.php';
+require __DIR__ . '/data.php';
 
 $searchQuery = strtolower($_GET['search'] ?? '');
 $categoryFilter = strtolower($_GET['category'] ?? 'all');

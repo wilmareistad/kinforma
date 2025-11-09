@@ -1,5 +1,5 @@
 <?php
-// header.php
+require __DIR__ . '/data.php';
 ?>
 <!DOCTYPE html>
 <html lang="sv">
