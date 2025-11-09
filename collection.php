@@ -32,17 +32,25 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                     class="category-frame<?= $categoryFilter === 'all' ? '-underlined' : '' ?>">
                     <p>Allt</p>
                 </a>
-                <a href="?search=<?= urlencode($searchQuery) ?>&category=jackor"
-                    class="category-frame<?= $categoryFilter === 'jackor' ? '-underlined' : '' ?>">
-                    <p>Jackor</p>
+                <a href="?search=<?= urlencode($searchQuery) ?>&category=kläder"
+                    class="category-frame<?= $categoryFilter === 'kläder' ? '-underlined' : '' ?>">
+                    <p>Kläder</p>
                 </a>
-                <a href="?search=<?= urlencode($searchQuery) ?>&category=byxor"
-                    class="category-frame<?= $categoryFilter === 'byxor' ? '-underlined' : '' ?>">
-                    <p>Byxor</p>
+                <a href="?search=<?= urlencode($searchQuery) ?>&category=beauty"
+                    class="category-frame<?= $categoryFilter === 'beauty' ? '-underlined' : '' ?>">
+                    <p>Beauty</p>
                 </a>
-                <a href="?search=<?= urlencode($searchQuery) ?>&category=verktyg"
-                    class="category-frame<?= $categoryFilter === 'verktyg' ? '-underlined' : '' ?>">
-                    <p>Verktyg</p>
+                <a href="?search=<?= urlencode($searchQuery) ?>&category=accessoarer"
+                    class="category-frame<?= $categoryFilter === 'accesoarer' ? '-underlined' : '' ?>">
+                    <p>Accessoarer</p>
+                </a>
+                <a href="?search=<?= urlencode($searchQuery) ?>&category=merch"
+                    class="category-frame<?= $categoryFilter === 'merch' ? '-underlined' : '' ?>">
+                    <p>Merch</p>
+                </a>
+                <a href="?search=<?= urlencode($searchQuery) ?>&category=teknik"
+                    class="category-frame<?= $categoryFilter === 'teknik' ? '-underlined' : '' ?>">
+                    <p>Teknik</p>
                 </a>
             </div>
 
