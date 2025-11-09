@@ -182,3 +182,7 @@ p {
   scroll-snap-type: x mandatory;
 }
 
+.product-info p {
+  margin: 5px;
+}
+
