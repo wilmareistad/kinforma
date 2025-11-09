@@ -35,3 +35,26 @@ button {
     margin-right: 0;
 
 }
+
+@media (min-width: 768px) {
+    .footer-deskt {
+      display: flex;
+    }
+}
+
+@media (min-width: 1024px) {
+    .invite-box{
+        width: 50%;
+    }
+
+    .footer-deskt {
+      display: flex;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+    .footer-deskt {
+      display: flex;
+    }
+}

@@ -58,7 +58,6 @@ I CSS/text: bara kopiera in ø direkt-->
 </section>
 
 <?php
-
 require __DIR__ . '/newsletter.php';
 require __DIR__ . '/footer.php';
 

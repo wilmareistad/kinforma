@@ -91,6 +91,32 @@ footer p {
     align-self: stretch;
 }
 
+@media (min-width: 768px) {
+    .footer-nav-container {
+      display: flex;
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        height: 50%;
+    }
+
+    .footer-nav-container {
+      display: flex;
+      flex-direction: row;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+    .footer-nav-container {
+      display: flex;
+      flex-direction: row;
+    }
+}
+
 footer h5 {
     color: var(--darkgreen, #1F2B28);
     font-family: var(--font-base);
