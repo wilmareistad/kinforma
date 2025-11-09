@@ -208,6 +208,7 @@ p {
 }
 
 .sustainability-container {
+  position: relative;
   display: flex;
   /*width: 393px;*/
   /*height: 433px;*/
@@ -216,11 +217,12 @@ p {
   align-items: center;
   gap: 212px;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
-/*.sustainability-container img {
-  min-height: 433px;
-}*/
+.sustainability-container img {
+  height: 433px;
+}
 
 .sustainability-container h3 {
   width: 261px;
@@ -232,11 +234,9 @@ p {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.72px;
-  position: absolute;
 }
 
 .p-frame {
-  position: absolute;
   display: flex;
   padding: 8px 20px;
   justify-content: center;
@@ -257,6 +257,9 @@ p {
 .sust-text {
   position: absolute;
   display: flex;
+  flex-direction: column;
+  gap: inherit;
+  padding-top: 20px;
 }
 
 
