@@ -4,7 +4,7 @@
     /*width: 390px;*/
     min-height: 1265px; /*tidigare height*/
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
     flex-shrink: 0;
 }
@@ -66,6 +66,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 /* Uppdaterad categories-box */
@@ -170,7 +172,8 @@ filter img {
 }
 
 .product-card img {
-    height: 215px;
+    max-height: 420px;
+    min-height: 190px;
     align-self: stretch;
 }
 
