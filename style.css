@@ -261,15 +261,3 @@ p {
   gap: inherit;
   padding-top: 20px;
 }
-
-@media (min-width: 1024px) {
-    .footer-deskt {
-      display: flex;
-      
-    }
-}
-
-/* Large desktop */
-@media (min-width: 1440px) {
-    /* Styles för stora skärmar */
-}

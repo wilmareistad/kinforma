@@ -41,7 +41,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                     <p>Beauty</p>
                 </a>
                 <a href="?search=<?= urlencode($searchQuery) ?>&category=accessoarer"
-                    class="category-frame<?= $categoryFilter === 'accesoarer' ? '-underlined' : '' ?>">
+                    class="category-frame<?= $categoryFilter === 'accessoarer' ? '-underlined' : '' ?>">
                     <p>Accessoarer</p>
                 </a>
                 <a href="?search=<?= urlencode($searchQuery) ?>&category=merch"
@@ -57,7 +57,6 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
             <div class="filter">
                 <img src="/assets/Filter.svg" alt="filter-icon">
             </div>
-        </div>
     </section>
 
     <section class="product-container">

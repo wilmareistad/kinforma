@@ -58,9 +58,9 @@ $products = [
 
     'bottlewarmerName' => [
         'img1' => 'assets/Bottlewarmer_Preview.png',
-        'description' => 'teknik',
+        'description' => 'Beskrivning',
         'prize' => '1000SEK',
-        'category' => 'verktyg',
+        'category' => 'teknik',
         'img2' => 'assets/',
         'img3' => 'assets/',
         'img4' => 'assets/',
