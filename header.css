@@ -1,9 +1,9 @@
 /* Header */
-.header {
+header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem 1.5rem;
+  justify-content: space-between;
   background-color: var(--background-color);
   position: relative;
 }
@@ -15,26 +15,6 @@
   color: var(--darkgreen);
 }
 
-/* Översättningsknapp */
-.translate-btn {
-  flex: 0 0 auto;           /* Knappen ändrar inte storlek */
-  font-size: 0.75rem;       /* Mindre text */
-  padding: 0.25rem 0.75rem; /* Mindre padding */
-  background-color: var(--background-color);
-  color: var(--darkgreen);
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin: o auto;
-  top: 0.75rem;
-  right: 1rem;
-  width: 40px;
-}
-
-.translate-btn:hover {
-  text-decoration: underline;
-}
 
 /* Hamburger */
 #menu-toggle {
@@ -126,8 +106,46 @@
     padding: 0 1rem;
   }
 
-  .translate-btn {
-    position: static;
-    margin-left: 1rem;
-  }
+}
+
+
+.container
+{
+  display: flex;
+  padding: 12px 0;
+  align-items: center;
+  gap: 8px;
+}
+.InaContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.EN{
+  color: var(--darkgreen);
+  background-color:var(--background-color);
+  font-family: "IBM Plex Sans";
+  font-size: 1 rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.06 rem;
+  text-transform: uppercase;
+  width: 19px;
+  height: 21px;
+}
+.SV{
+  color: var(--darkgreen);
+  background-color: var(--background-color);
+  font-family: "IBM Plex Sans";
+  font-size: 1 rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.06 rem;
+  text-transform: uppercase;
+  width: 19px;
+  height: 21px;
 }

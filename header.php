@@ -16,11 +16,15 @@ require __DIR__ . '/data.php';
   <link rel="stylesheet" href="sustainability.css">
   <link rel="stylesheet" href="newsletter.css">
   <link rel="stylesheet" href="footer.css">
+
 </head>
 
 <body>
 
-  <header class="header">
+  <header>
+    
+    <button class="SV"><div>SV</div></button>
+    <button class="EN"><div>EN</div></button>
     <div class="logo">Kinforma</div>
 
     <!-- Hamburger checkbox -->
@@ -35,14 +39,14 @@ require __DIR__ . '/data.php';
 
     <!-- Navigering -->
     <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">About us</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
+      <a href="index.php">Hem</a>
+      <a href="about.php">Om oss</a>
+      <a href="product-page.php">Produkter</a>
+      <a href="#">Kontakta oss</a>
     </nav>
 
-    <!-- Översättningsknapp -->
-    <button class="translate-btn">🌐 Översätt</button>
+  
+  
   </header>
 
 </body>
