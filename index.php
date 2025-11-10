@@ -47,7 +47,7 @@ I CSS/text: bara kopiera in ø direkt-->
 </section>
 
 <section class="sustainability-container">
-    <img src="/assets/Hero_PW1_Gräslandskap.png" alt="Hållbarhet">
+    <img src="/assets/Simon.Snow_Scene.Preview.png" alt="Hållbarhet">
     <div class="sust-text">
         <h3>Innovation till och för framtiden.</h3>
         <div class="p-frame">

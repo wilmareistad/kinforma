@@ -258,6 +258,7 @@ p {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: inherit;
+  gap: 200px;
   padding-top: 20px;
+  align-items: center;
 }
