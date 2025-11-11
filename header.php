@@ -22,10 +22,17 @@ require __DIR__ . '/data.php';
 <body>
 
   <header>
-    
-    <button class="SV"><div>SV</div></button>
-    <button class="EN"><div>EN</div></button>
-    <div class="logo">Kinforma</div>
+    <div class="container"></div>
+    <div class="InaContainer"></div>
+    <div class=""></div>
+ <div class="lang-buttons">
+  <button class="SV"><div>SV</div></button>
+  <button class="EN"><div>EN</div></button>
+</div>
+
+ <div class="logo">
+  <img src="full_logga-07.png" alt="Kinforma Logo">
+ </div>
 
     <!-- Hamburger checkbox -->
     <input type="checkbox" id="menu-toggle">
