@@ -1,36 +1,49 @@
 <?php
-
 require __DIR__ . "/header.php";
 require __DIR__ . "/data.php";
-/*=======
-require 'data.php';*/
+require __DIR__ . "/collection.php";
+// 1️⃣ Kontrollera att "product" finns i URL
+if (!empty($_GET['product'])) {
+    $productName = $_GET['product'];
 
+    // 2️⃣ Kontrollera att produkten finns i arrayen
+    if (isset($products[$productName])) {
+        $product = $products[$productName];
+    } else {
+        echo "<h2>Produkten hittades inte!</h2>";
+        exit;
+    }
+} else {
+    echo "<h2>Ingen produkt vald.</h2>";
+    exit;
+}
 
-$productName = $_GET['product'];
-$product = $products[$productName];
+// 3️⃣ Använd htmlspecialchars vid utskrift i HTML
+$productNameEscaped = htmlspecialchars($productName);
 ?>
 
 <div class="product-detail">
-    <h1><?= $productName; ?></h1>
-    <img src="<?= $product['img1']; ?>" alt="<?= $productName; ?> img1" />
+  
+    <h1><?= $productNameEscaped; ?></h1>
 
-    <p><strong>Beskrivning:</strong> <?= $product['description']; ?></p>
+    <?php if (!empty($product['img1'])): ?>
+        <img src="<?= $product['img1']; ?>" alt="<?= $productNameEscaped; ?> img1" />
+    <?php endif; ?>
 
-    <p><strong>Pris:</strong> <?= $product['prize']; ?></p>
 
-    <img src="<?= $product['img2']; ?>" alt="<?= $productName; ?> img2" />
-    <img src="<?= $product['img3']; ?>" alt="<?= $productName; ?> img3" />
-    <img src="<?= $product['img4']; ?>" alt="<?= $productName; ?> img4" />
-    <img src="<?= $product['img5']; ?>" alt="<?= $productName; ?> img5" />
+    <p><strong>Beskrivning:</strong> <?= htmlspecialchars($product['description']); ?></p>
+    <p><strong>Pris:</strong> <?= htmlspecialchars($product['prize']); ?></p>
+
+    <div class="gallery">
+        <?php foreach (['img2','img3','img4','img5'] as $imgKey): ?>
+            <?php if (!empty($product[$imgKey])): ?>
+                <img src="<?= $product[$imgKey]; ?>" alt="<?= $productNameEscaped; ?> <?= $imgKey; ?>" />
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
 </div>
-
-
-<!--Loopa igenom array i data.php för info om enskilda produkter
 
 <?php
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
-
-/*=======
-Loopa igenom array i data.php för info om enskilda produkter
->>>>>>> main*/
+?>
