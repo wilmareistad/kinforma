@@ -10,6 +10,10 @@ require 'data.php';
 Om ni ska ha det på webben, kan ni använda HTML-koden: &oslash; för ø eller &Oslash; för Ø
 I CSS/text: bara kopiera in ø direkt-->
 
+<div class="ten-percent">
+    <p>Få 10% rabatt om du blir medlem idag</p>
+</div>
+
 <section class="hero-container">
     <img src="assets/Hero_PW1_Gräslandskap.png" alt="Hero img">
     <!-- <img src="assets/Jacka2hero.png" class="jacket"> -->

@@ -34,6 +34,28 @@ p {
   margin: 16px;
 }
 
+.ten-percent {
+  background: var(--darkgreen, #1F2B28);
+  display: flex;
+  width: 100vw;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.ten-percent p {
+  color: var(--background-color);
+/* Mobil/p/p regular */
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
 .hero-container {
   display: flex;
   height: 633px;
