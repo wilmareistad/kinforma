@@ -18,13 +18,13 @@ header {
   z-index: 10;
 }
 .logo img {
-  max-height: 200px;
+  max-height: 100px;
   width: auto;
 }
 
 @media (max-width: 768px) {
   .logo img {
-    max-height: 40px; 
+    max-height: 100px; 
   }
 }
 
@@ -132,8 +132,6 @@ header {
 .SV, .EN {
   color: var(--darkgreen);
   background-color: var(--background-color);
-  border: 1px solid var(--darkgreen);
-  border-radius: 4px;
   padding: 4px 8px;
   font-family: "IBM Plex Sans";
   font-size: 1rem;
@@ -155,3 +153,23 @@ header {
   background-color: var(--orange);
 
 }
+/* Hamburgarmeny mobil*/
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed; /* Gör att den täcker skärmen */
+    top: 0; 
+    left: 0;
+    width: 100vw; /* hela bredden */
+    height: 50vh; /* halva skärmhöjden */
+    background-color: var(--background-color);
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+    padding: 2rem 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+    z-index: 15;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }}

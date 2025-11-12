@@ -38,7 +38,7 @@ require __DIR__ . '/data.php';
     </div>
 
     <div class="logo">
-      <img src="logga/text-logga.png" alt="Kinforma Logo">
+      <img src="/logga/full-logga.png" alt="Kinforma Logo">
     </div>
 
     <!-- Hamburger checkbox -->
