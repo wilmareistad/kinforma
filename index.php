@@ -12,6 +12,7 @@ I CSS/text: bara kopiera in ø direkt-->
 
 <section class="hero-container">
     <img src="assets/Hero_PW1_Gräslandskap.png" alt="Hero img">
+    <img src="assets/Jacka2hero.png" class="jacket">
     <div class="hero-text">
         <p class="spring">Vår 2026</p>
         <p class="collection-name">Th&oslash;</p>
@@ -47,7 +48,7 @@ I CSS/text: bara kopiera in ø direkt-->
 </section>
 
 <section class="sustainability-container">
-    <img src="/assets/Simon.Snow_Scene.Preview.png" alt="Hållbarhet">
+    <img src="/assets/Karbinhake_WIP 2.png" alt="Hållbarhet">
     <div class="sust-text">
         <h3>Innovation till och för framtiden.</h3>
         <div class="p-frame">
