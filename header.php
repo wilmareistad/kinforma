@@ -8,6 +8,9 @@ require __DIR__ . '/data.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kinforma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="about.css">
@@ -25,14 +28,18 @@ require __DIR__ . '/data.php';
     <div class="container"></div>
     <div class="InaContainer"></div>
     <div class=""></div>
- <div class="lang-buttons">
-  <button class="SV"><div>SV</div></button>
-  <button class="EN"><div>EN</div></button>
-</div>
+    <div class="lang-buttons">
+      <button class="SV">
+        <div>SV</div>
+      </button>
+      <button class="EN">
+        <div>EN</div>
+      </button>
+    </div>
 
- <div class="logo">
-  <img src="logga/text-logga.png" alt="Kinforma Logo">
- </div>
+    <div class="logo">
+      <img src="logga/text-logga.png" alt="Kinforma Logo">
+    </div>
 
     <!-- Hamburger checkbox -->
     <input type="checkbox" id="menu-toggle">
@@ -52,8 +59,8 @@ require __DIR__ . '/data.php';
       <a href="#">Kontakta oss</a>
     </nav>
 
-  
-  
+
+
   </header>
 
 </body>

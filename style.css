@@ -64,7 +64,7 @@ p {
   font-family: var(--font-base);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold 500; /*500*/
   line-height: normal;
   letter-spacing: -0.48px;
   position: absolute;
@@ -74,7 +74,7 @@ p {
 
 .collection-name {
   color: var(--background-color, #FFFDF8);
-  font-family: var(--font-base);
+  font-family: "IBM Plex Serif";
   font-size: 6rem;
   font-style: italic;
   font-weight: 400;
@@ -103,16 +103,37 @@ p {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 153px;
+  margin-bottom: 178px;
 }
 
-.about p, h2 {
+.text.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   align-self: stretch;
+}
+
+.about p {
   color: var(--darkgreen, #1F2B28);
   font-family: var(--font-base);
-  line-height: 110%; /* 39.6px */
-  letter-spacing: -1.08px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.about p .special {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 600;
+}
+
+.about p .orange {
+  color: var(--Orange, #EF8231);
 }
 
 .THO {

@@ -21,8 +21,9 @@ I CSS/text: bara kopiera in ø direkt-->
 </section>
 
 <section class="about">
-    <h2>OM KINFORMA</h2>
-    <p>Upplev en ny dimension av mode med vår senaste kollektion. Designad av dig, drivet av teknik, skapat för planeten.</p>
+    <div class="text-box">
+        <p>Upplev en ny dimension av mode med vår senaste kollektion <span class="special">thø</span><span class="orange">.</span> Designad av <span class="special">dig</span>, drivet av <span class="special">teknik</span>, skapat för <span class="special">planeten</span><span class="orange">.</span></p>
+    </div>
 </section>
 
 <section class="THO">
