@@ -1,37 +1,44 @@
 .team {
     width: 100%;
-    height: 100%;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    height: 528px;
+    margin: 0;
+    object-fit: cover;
+
 }
 
-.smart-textil {
+.smart-textil-container img {
+    width: 50%;
+    height: auto;
+}
+
+.smart-textil-container {
+    display: flex;
+    gap: 4px;
     width: 100vw;
-    height: 400px;
 }
 
-.container-about img {
+/* .container-about img {
     margin-top: 64px;
     margin-bottom: 64px;
     object-fit: cover;
 
-}
+} */
 
 .klubb-kin {
 color: var(--background-color, #FFFDF8);
 text-align: center;
 font-family: "IBM Plex Serif";
-font-size: 4rem;
+font-size: 2.25rem;
 font-style: italic;
 font-weight: 400;
 line-height: 100%;
-letter-spacing: -3.84px;
+letter-spacing: -2.16px;
 position: absolute;
-top: 0px;
-margin: 50px;
+bottom: 37px;
+margin: 0;
 } 
 
-.container-about div {
+/* .container-about div {
     position: relative;
     width: 100vw;
     height: 528px;
@@ -40,7 +47,18 @@ margin: 50px;
     justify-content: center;
     align-items: center;
     
-} 
+}  */
+
+.about-hero {
+    position: relative;
+    width: 100vw;
+    /* height: 528px; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
  
 .container-about button {
     width: auto;
@@ -48,5 +66,23 @@ margin: 50px;
     background: none;
     border: 1px solid var(--BG, #FFFDF8);
     padding: 8px 20px;
-    bottom: 72px;
+    bottom: 26px;
+}
+
+.persenol-design, .smart-textil, .sustainable-fashion {
+    display: flex;
+}
+
+.persenol-design h3::after, .smart-textil h3::after, .sustainable-fashion h3::after {
+  content: ".";
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
