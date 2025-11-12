@@ -12,7 +12,7 @@ I CSS/text: bara kopiera in ø direkt-->
 
 <section class="hero-container">
     <img src="assets/Hero_PW1_Gräslandskap.png" alt="Hero img">
-    <img src="assets/Jacka2hero.png" class="jacket">
+    <!-- <img src="assets/Jacka2hero.png" class="jacket"> -->
     <div class="hero-text">
         <p class="spring">Vår 2026</p>
         <p class="collection-name">Th&oslash;</p>
@@ -29,7 +29,7 @@ I CSS/text: bara kopiera in ø direkt-->
 <section class="THO">
     <div class="products-container">
         <div class="THO-explore">
-            <h3>Utforska TH&Oslash kollektionen</h3>
+            <h3>Utforska <span class="italic">TH&Oslash</span> kollektionen</h3>
             <a href="collection.php"><img src="/assets/Pil.svg"></a>
         </div>
 
@@ -56,8 +56,18 @@ I CSS/text: bara kopiera in ø direkt-->
             <p>Våra arbetssätt</p>
         </div>
     </div>
-
 </section>
+
+<section class="about-kin">
+    <img src="/assets/Jacka4.png" alt="Hållbarhet">
+    <div class="sust-text">
+        <h3>Om Kinforma.</h3>
+        <div class="p-frame">
+            <p>Läs mer</p>
+        </div>
+    </div>
+</section>
+
 
 <?php
 require __DIR__ . '/newsletter.php';

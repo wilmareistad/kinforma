@@ -64,7 +64,7 @@ p {
   font-family: var(--font-base);
   font-size: 1rem;
   font-style: normal;
-  font-weight: bold 500; /*500*/
+  font-weight: 500;
   line-height: normal;
   letter-spacing: -0.48px;
   position: absolute;
@@ -137,10 +137,10 @@ p {
 }
 
 .THO {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 64px;
 }
 
 .products-container {
@@ -165,11 +165,17 @@ p {
   gap: 8px;
   color: var(--darkgreen, #1F2B28);
   font-family: var(--font-base);
-  font-size: 1.5rem; /*2rem för stor för en rad*/
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 110%; /* 26.4px */
   letter-spacing: -0.72px;
+  margin: 0;
+}
+
+.THO-explore h3 .italic {
+font-family: "IBM Plex Serif";
+font-style: italic;
 }
 
 .THO-explore img {
@@ -191,8 +197,15 @@ p {
   scroll-snap-type: x mandatory;
 }
 
+.product-info {
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
 .product-info p {
-  margin: 5px;
+  margin: 0px;
 }
 
 .name {
@@ -201,7 +214,6 @@ p {
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    font-weight: bold;
     line-height: normal;
     letter-spacing: -0.48px;
 }
@@ -216,31 +228,33 @@ p {
     letter-spacing: -0.48px;
 }
 
-.sustainability-container {
-  position: relative;
-  display: flex;
-  padding: 55px 65px;
-  flex-direction: column;
-  align-items: center;
-  gap: 212px;
-  flex-shrink: 0;
-  overflow: hidden;
+.sustainability-container, .about-kin {
+    position: relative;
+    display: flex;
+    padding: 0px 65px;
+    flex-direction: column;
+    align-items: center;
+    gap: 212px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin: 8px 0px;
 }
 
-.sustainability-container img {
+.sustainability-container img, .about-kin img {
   height: 433px;
 }
 
-.sustainability-container h3 {
+.sustainability-container h3, .about-kin h3 {
   width: 261px;
   color: var(--background-color, #FFFDF8);
   text-align: center;
 /* Mobil/H3/H3 serif */
+  font-size: 2rem;  
   font-family: "IBM Plex Serif";
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.72px;
+  letter-spacing: -1.08px;
 }
 
 .p-frame {
@@ -255,8 +269,9 @@ p {
 .p-frame p {
   color: var(--background-color);
   font-family: var(--font-base);
+  font-size: 1rem;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: -0.48px;
 }
@@ -265,12 +280,10 @@ p {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 200px;
-  padding-top: 20px;
-  align-items: center;
+  bottom: 100px;
 }
 
-.jacket {
+/*.jacket {
     position: absolute;
     background: none !important;
     top: 40%;
@@ -285,4 +298,4 @@ p {
     left: 80%;
     padding: 120px;
   }
-}
+}*/

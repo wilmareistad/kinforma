@@ -1,6 +1,7 @@
 .invite-box {
     padding: 20px;
     width: 100vw;
+    margin-top: 90px;
 }
     
 input[type="email"] {
