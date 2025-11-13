@@ -92,7 +92,10 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                     <section class="product">
                         <img src="<?= $value['img1']; ?>" alt="<?= htmlspecialchars($product); ?> img1" />
                         <div class="product-info">
-                            <p class="name"><?= htmlspecialchars($product); ?></p>
+                            <div class="name-heart">
+                                <p class="name"><?= htmlspecialchars($product); ?></p>
+                                <img src="/assets/heart.svg">
+                            </div>
                             <p class="prize"><?= htmlspecialchars($value['prize']); ?></p>
                         </div>
                     </section>

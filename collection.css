@@ -280,3 +280,13 @@
     align-self: stretch;
 }
 
+.product-info img {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+
+.name-heart {
+    display: flex;
+}
+
