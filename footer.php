@@ -23,9 +23,6 @@
                 <a href="about.php">
                     <p>Om oss</p>
                 </a>
-                <a href="sustainability.php">
-                    <p>Hållbarhet</p>
-                </a>
                 <a href="collection.php">
                     <p>THØ Kollektionen</p>
                 </a>

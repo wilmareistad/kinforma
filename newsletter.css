@@ -46,6 +46,7 @@ button {
 @media (min-width: 1024px) {
     .invite-box{
         width: 50%;
+        margin-top: 80px;
     }
 
     .footer-deskt {

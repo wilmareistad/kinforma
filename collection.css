@@ -8,12 +8,46 @@
     flex-shrink: 0;
 }
 
+.img-logo {
+    height: 406px;
+    flex-shrink: 0;
+    display: flex;
+    align-self: center;
+}
+
+.tho-text {
+    height: 406px;
+    flex-shrink: 0;
+}
+
+.tho-text p {
+        /* width: 50vw; */
+    color: var(--darkgreen, #1F2B28);
+    font-family: "IBM Plex Serif";
+    font-size: 8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    /* display: flex; */
+    height: 110px;
+}
+
+.img-logo img {
+    position: absolute;
+    /* width: 230px; */
+    height: 288px;
+    flex-shrink: 0;
+    aspect-ratio: 115 / 144;
+    align-self: end;
+    justify-self: anchor-center;
+}
+
 /* Sökruta */
 .search-form {
     display: flex;
     width: 353px;
     gap: 16px;
-    padding: 0 20px 5px;
+    padding: 0 0 8px;
     border-bottom: 1px solid var(--darkgreen, #1F2B28);
     margin: 20px;
 }
@@ -23,7 +57,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    padding-left: 32px;
 }
 
 .search-icon {
@@ -35,7 +69,6 @@
     /*width: 18px;
     height: 18px;*/
     flex-shrink: 0;
-    opacity: 0.5;
 }
 
 .search-form input[type="text"] {
@@ -62,11 +95,11 @@
 
 .sort-filter {
     display: flex;
-    width: 353px;
+    /* width: 353px; */
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
-    margin-top: 40px;
+    /* gap: 16px; */
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 

@@ -45,7 +45,7 @@ require __DIR__ . '/data.php';
 </section>
 
 <section class="sustainability-container">
-    <img src="/assets/Karbinhake_WIP 2.png" alt="Hållbarhet">
+    <img src="/assets/Karbinhake_Miljo_Tillsammans_Med_Andra_Varianter.png" alt="Hållbarhet">
     <div class="sust-text">
         <h3>Innovation till och för framtiden.</h3>
         <div class="a-frame">
@@ -55,7 +55,7 @@ require __DIR__ . '/data.php';
 </section>
 
 <section class="about-kin">
-    <img src="/assets/Jacka4.png" alt="Hållbarhet">
+    <img src="/assets/Puffer_Jacket_3.png" alt="Hållbarhet">
     <div class="sust-text">
         <h3>Om Kinforma</h3>
         <div class="a-frame">

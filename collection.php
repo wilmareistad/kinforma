@@ -1,5 +1,4 @@
 <?php
-
 require __DIR__ . '/header.php';
 require __DIR__ . '/ten-percent.php';
 require __DIR__ . '/data.php';
@@ -9,6 +8,14 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
 ?>
 
 <div class="collection-container">
+    <section class="img-logo">
+        <div class="tho-text">
+            <p>Th&oslash</p>
+            <p>Th&oslash</p>
+            <p>Th&oslash</p>
+        </div>
+        <img src="/assets/d6efe9213f26c4c1fe907476e258e5c25a53fbb5.png">
+    </section>
     <section class="sort-filter">
         <!-- Sökruta -->
         <form action="" method="GET" class="search-form">
