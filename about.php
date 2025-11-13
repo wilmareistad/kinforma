@@ -1,7 +1,7 @@
 <?php
 
-
 require __DIR__ . "/header.php";
+require __DIR__ . '/ten-percent.php';
 
 ?>
 <!-- // länken till css ska tas bort när den är kopplad till index -->

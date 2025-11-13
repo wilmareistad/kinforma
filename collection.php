@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/header.php';
+require __DIR__ . '/ten-percent.php';
 require __DIR__ . '/data.php';
 
 $searchQuery = strtolower($_GET['search'] ?? '');

@@ -45,7 +45,7 @@ p {
   gap: 8px;
 }
 
-.ten-percent p {
+.ten-percent a {
   color: var(--background-color);
 /* Mobil/p/p regular */
   font-family: var(--font-base);
@@ -54,6 +54,11 @@ p {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
+  text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .hero-container {
@@ -86,7 +91,7 @@ p {
   font-family: var(--font-base);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
   position: absolute;
@@ -151,7 +156,7 @@ p {
 .about p .special {
   font-family: "IBM Plex Serif";
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .about p .orange {
@@ -245,21 +250,20 @@ font-style: italic;
     font-family: var(--font-base);
     font-size: 1rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: -0.48px;
 }
 
 .sustainability-container, .about-kin {
-    position: relative;
-    display: flex;
-    padding: 0px 65px;
-    flex-direction: column;
-    align-items: center;
-    gap: 212px;
-    flex-shrink: 0;
-    overflow: hidden;
-    margin: 8px 0px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin: 8px 0px;
+  height: 433px;
 }
 
 .sustainability-container img, .about-kin img {
@@ -274,35 +278,42 @@ font-style: italic;
   font-size: 2rem;  
   font-family: "IBM Plex Serif";
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: -1.08px;
+  margin: 0px;
 }
 
-.p-frame {
+.a-frame {
   display: flex;
-  padding: 8px 20px;
+  padding: 8px 24px;
   justify-content: center;
   align-items: center;
   gap: 4px;
   border: 1px solid var(--background-color);
 }
 
-.p-frame p {
+.a-frame a {
   color: var(--background-color);
   font-family: var(--font-base);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
+  margin: 0px;
+  text-decoration: none;
 }
 
 .sust-text {
   position: absolute;
   display: flex;
   flex-direction: column;
-  bottom: 100px;
+  padding: 55px 65px 32px 65px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
 }
 
 /*.jacket {

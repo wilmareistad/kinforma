@@ -1,18 +1,10 @@
 <?php
 
 require __DIR__ . '/header.php';
+require __DIR__ . '/ten-percent.php';
 require __DIR__ . '/data.php';
-require 'data.php';
 
 ?>
-
-<!--Se till att fonten ni använder stödjer ø-tecknet (de flesta moderna fonter gör det)
-Om ni ska ha det på webben, kan ni använda HTML-koden: &oslash; för ø eller &Oslash; för Ø
-I CSS/text: bara kopiera in ø direkt-->
-
-<div class="ten-percent">
-    <p>Få 10% rabatt om du blir medlem idag</p>
-</div>
 
 <section class="hero-container">
     <img src="assets/Hero_PW1_Gräslandskap.png" alt="Hero img">
@@ -56,8 +48,8 @@ I CSS/text: bara kopiera in ø direkt-->
     <img src="/assets/Karbinhake_WIP 2.png" alt="Hållbarhet">
     <div class="sust-text">
         <h3>Innovation till och för framtiden.</h3>
-        <div class="p-frame">
-            <p>Våra arbetssätt</p>
+        <div class="a-frame">
+            <a href="about.php">Våra arbetssätt</a>
         </div>
     </div>
 </section>
@@ -65,9 +57,9 @@ I CSS/text: bara kopiera in ø direkt-->
 <section class="about-kin">
     <img src="/assets/Jacka4.png" alt="Hållbarhet">
     <div class="sust-text">
-        <h3>Om Kinforma.</h3>
-        <div class="p-frame">
-            <p>Läs mer</p>
+        <h3>Om Kinforma</h3>
+        <div class="a-frame">
+            <a href="about.php">Läs mer</a>
         </div>
     </div>
 </section>
