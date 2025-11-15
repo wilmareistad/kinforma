@@ -10,7 +10,7 @@ require __DIR__ . '/ten-percent.php';
     <section class="container-about">
         <div class="about-hero">
             <p class="klubb-kin">Våra arbetsätt</p>
-            <img class="team" src="https://qualityoutlet.com/wp-content/uploads/2025/03/RevolutionRace.2.1.jpg" alt="bild på teamet">
+            <img class="team" src="https://a.storyblok.com/f/142343/720x1080/25fa951564/vandring-header-autumn-winter-mobile-720x1080px.jpg/m/500x0/smart" alt="bild på teamet">
             <!-- <button>Våra arbetsätt</button> -->
         </div>
     </section>
@@ -29,8 +29,8 @@ require __DIR__ . '/ten-percent.php';
         </div>
     </section>
     <div class="smart-textil-container">
-        <img src="https://qualityoutlet.com/wp-content/uploads/2025/03/RevolutionRace.2.1.jpg" alt="bild på teamet">
-        <img src="https://qualityoutlet.com/wp-content/uploads/2025/03/RevolutionRace.2.1.jpg" alt="bild på teamet">
+        <img src="https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=1200,h=635,q=80/sites/www.builtin.com/files/2024-11/smart-textile.jpg" alt="bild på teamet">
+        <img src="https://img.freepik.com/premium-photo/rough-blue-fabric-texture-cotton-knitted-fabric-modern-waterproof-flexible-temperature-control-materials-multifunctional-smart-textile-closeup-selective-focus-does-tear_309665-2265.jpg" alt="bild på teamet">
     </div>
 </main>
 <?php
