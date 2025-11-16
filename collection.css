@@ -8,38 +8,37 @@
     flex-shrink: 0;
 }
 
-.img-logo {
-    height: 406px;
-    flex-shrink: 0;
+.tho-collection-frame {
     display: flex;
-    align-self: center;
+    width: 344px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.tho-text {
-    height: 406px;
-    flex-shrink: 0;
-}
-
-.tho-text p {
-        /* width: 50vw; */
+.tho-collection-frame h3 {
+    align-self: stretch;
     color: var(--darkgreen, #1F2B28);
-    font-family: "IBM Plex Serif";
-    font-size: 8rem;
-    font-style: italic;
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 40px 16px 0px;
+}
+
+.tho-collection-frame .orange {
+  color: var(--Orange, #EF8231);
+}
+
+.tho-collection-frame p {
+    align-self: stretch;
+    color: var(--darkgreen, #1F2B28);
+    font-family: var(--font-base);
+    font-size: 1rem;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
-    /* display: flex; */
-    height: 110px;
-}
-
-.img-logo img {
-    position: absolute;
-    /* width: 230px; */
-    height: 288px;
-    flex-shrink: 0;
-    aspect-ratio: 115 / 144;
-    align-self: end;
-    justify-self: anchor-center;
+    margin: 0px 16px;
 }
 
 /* Sökruta */
@@ -99,7 +98,7 @@
     flex-direction: column;
     align-items: flex-start;
     /* gap: 16px; */
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     margin-bottom: 20px;
 }
 
@@ -273,11 +272,12 @@
 
 .product-info {
     display: flex;
-    padding: 8px 16px;
+    padding: 8px 0px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: 6px;
     align-self: stretch;
+    margin: 0px 16px 17px;
 }
 
 .product-info img {
@@ -286,7 +286,17 @@
     aspect-ratio: 1/1;
 }
 
+.product-info img:hover {
+    width: 26px;
+    height: 26px;
+
+}
+
 .name-heart {
     display: flex;
+    width: 163px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 

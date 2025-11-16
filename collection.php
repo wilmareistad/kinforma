@@ -8,13 +8,9 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
 ?>
 
 <div class="collection-container">
-    <section class="img-logo">
-        <div class="tho-text">
-            <p>Th&oslash</p>
-            <p>Th&oslash</p>
-            <p>Th&oslash</p>
-        </div>
-        <img src="/assets/d6efe9213f26c4c1fe907476e258e5c25a53fbb5.png">
+    <section class="tho-collection-frame">
+        <h3>THØ KOLLEKTIONEN<span class="orange">.</span></h3>
+        <p>Här ska det stå en mer förklarande text om Kinforma. Den ska inte vara så lång men den ska innehålla mer detaljerad info om märket.</p>
     </section>
     <section class="sort-filter">
         <!-- Sökruta -->
@@ -91,22 +87,22 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                 <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
                     <section class="product">
                         <img src="<?= $value['img1']; ?>" alt="<?= htmlspecialchars($product); ?> img1" />
-                        <div class="product-info">
-                            <div class="name-heart">
-                                <p class="name"><?= htmlspecialchars($product); ?></p>
-                                <img src="/assets/heart.svg">
-                            </div>
-                            <p class="prize"><?= htmlspecialchars($value['prize']); ?></p>
-                        </div>
-                    </section>
                 </a>
-            <?php } ?>
-
-            <?php if ($foundProducts === 0): ?>
-                <p class="no-results">Inga produkter hittades</p>
-            <?php endif; ?>
-        </div>
+                <div class="product-info">
+                    <div class="name-heart">
+                        <p class="name"><?= htmlspecialchars($product); ?></p>
+                        <img src="/assets/heart.svg">
+                    </div>
+                    <p class="prize"><?= htmlspecialchars($value['prize']); ?></p>
+                </div>
     </section>
+<?php } ?>
+
+<?php if ($foundProducts === 0): ?>
+    <p class="no-results">Inga produkter hittades</p>
+<?php endif; ?>
+</div>
+</section>
 </div>
 
 <?php
