@@ -4,49 +4,49 @@ require __DIR__ . '/ten-percent.php';
 require __DIR__ . "/data.php";
 // 1️⃣ Kontrollera att "product" finns i URL
 ?>
+<?php
+$productName = $_GET['product'];
+$product = $products[$productName];
+?>
 
 <section class="product-page-hero">
     <div class="carousel">
-        <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
 
         <div class="carousel-images">
-            <img src="/assets/Karbinhake_Orange_Framifran_9_10.png" alt="Bild 1" class="carousel-slide active">
-            <img src="/assets/Karbinhake_Orange_Framifran-Oppen_Hake_9_10.png" alt="Bild 2" class="carousel-slide">
-            <img src="/assets/Close_Up_Logga_Test_2.png" alt="Bild 3" class="carousel-slide">
-            <img src="/assets/Close_Up_Logga_Test_3.png" alt="Bild 4" class="carousel-slide">
-        </div>
 
-        <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+            <section class="product-images">
+                <img src="<?= $product['img1']; ?>" alt="<?= $productName; ?> img1" class="carousel-slide active">
+                <img src="<?= $product['img2']; ?>" alt="<?= $productName; ?> img2" class="carousel-slide">
+                <img src="<?= $product['img3']; ?>" alt="<?= $productName; ?> img3" class="carousel-slide">
+                <img src="<?= $product['img4']; ?>" alt="<?= $productName; ?> img4" class="carousel-slide">
+                <img src="<?= $product['img5']; ?>" alt="<?= $productName; ?> img5" class="carousel-slide">
+                <img src="<?= $product['img6']; ?>" alt="<?= $productName; ?> img6" class="carousel-slide">
+            </section>
 
-        <!-- Prickar för att visa vilken bild (valfritt) -->
-        <div class="carousel-dots">
-            <span class="dot active" onclick="goToSlide(0)"></span>
-            <span class="dot" onclick="goToSlide(1)"></span>
-            <span class="dot" onclick="goToSlide(2)"></span>
-            <span class="dot" onclick="goToSlide(3)"></span>
+
+            <!-- Prickar för att visa vilken bild (valfritt) -->
+            <div class="carousel-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+            </div>
         </div>
-    </div>
 </section>
 
 <section class="info-product">
-    <?php
-    $productName = $_GET['product'];
-    $product = $products[$productName];
-    ?>
 
-    <div class="product-cont">
-        <!--<section class="product-images">
-            <img src="<?= $product['img1']; ?>" alt="<?= $productName; ?> img1" />
-            <img src="<?= $product['img2']; ?>" alt="<?= $productName; ?> img2" />
-            <img src="<?= $product['img3']; ?>" alt="<?= $productName; ?> img3" />
-            <img src="<?= $product['img4']; ?>" alt="<?= $productName; ?> img4" />
-        </section>-->
 
-        <section class="product-detail">
-            <h2><?= $productName; ?></h2>
-            <p class="prize"><?= $product['prize']; ?></p>
-            <p class="name"><?= $product['description']; ?></p>
-        </section>
+    <!--<img src="/assets/Karbinhake_Orange_Framifran_9_10.png" alt="Bild 1" class="carousel-slide active">
+            <img src="/assets/Karbinhake_Orange_Framifran-Oppen_Hake_9_10.png" alt="Bild 2" class="carousel-slide">
+            <img src="/assets/Close_Up_Logga_Test_2.png" alt="Bild 3" class="carousel-slide">
+            <img src="/assets/Close_Up_Logga_Test_3.png" alt="Bild 4" class="carousel-slide"> -->
+
+    <section class="product-detail">
+        <h2><?= $productName; ?></h2>
+        <p class="prize"><?= $product['prize']; ?></p>
+        <p class="name"><?= $product['description']; ?></p>
+    </section>
     </div>
 
     <section class="THO">
@@ -69,7 +69,8 @@ require __DIR__ . "/data.php";
                 <?php
                 }
                 ?>
+            </div>
 
-                <?php
-                require __DIR__ . '/newsletter.php';
-                require __DIR__ . '/footer.php';
+            <?php
+            require __DIR__ . '/newsletter.php';
+            require __DIR__ . '/footer.php';

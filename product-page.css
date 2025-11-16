@@ -33,37 +33,7 @@
 }
 
 @media (min-width: 1024px) {
-  .carousel-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      font-size: 30px;
-      padding: 10px 15px;
-      cursor: pointer;
-      z-index: 10;
-      transition: background 0.3s;
-  }
-}
-
-/*@media (max-width: 1024px) {
-  .carousel-btn {
-   :hidden;
-  }
-}*/
-
-.carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+  
 }
 
 .carousel-dots {
