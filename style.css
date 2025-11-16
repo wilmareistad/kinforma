@@ -203,12 +203,6 @@ font-style: italic;
   height: 14px;
 }
 
-.product-carousel img {
-  height: 312px;
-  align-self: stretch;
-  background: var(--darkgreen);
-}
-
 .product-carousel {
   width: 100vw;
   display: flex;
@@ -217,11 +211,55 @@ font-style: italic;
   scroll-snap-type: x mandatory;
 }
 
+.product {
+  flex-shrink: 0; /* LÄGG TILL - förhindrar produkter från att krympas */
+  scroll-snap-align: start; /* LÄGG TILL - för snap scroll */
+}
+
+.product-image-wrapper {
+    position: relative;
+    /*width: 312px; /* LÄGG TILL - fast bredd som matchar bildhöjden */
+    height: 312px; /* LÄGG TILL */
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.product-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.product-img-default {
+    position: relative;
+}
+
+.product-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product:hover .product-img-hover {
+    opacity: 1;
+}
+
+/* TA BORT DENNA (den krockar med .product-image-wrapper img) */
+/* .product-carousel img {
+  height: 312px;
+  align-self: stretch;
+  background: var(--darkgreen);
+} */
+
 .product-info {
   padding: 8px 16px;
   align-items: flex-start;
   gap: 4px;
   align-self: stretch;
+  width: 312px; /* LÄGG TILL - matchar bildbredden */
 }
 
 .product-info p {

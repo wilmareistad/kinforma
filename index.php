@@ -35,7 +35,10 @@ require __DIR__ . '/data.php';
             <?php
             foreach ($products as $product => $value) { ?>
                 <section class="product">
-                    <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
+                    <div class="product-image-wrapper">
+                        <img src="<?= $value['img1']; ?>" class="product-img-default" alt="<?= $product; ?>" />
+                        <img src="<?= $value['img2']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
+                    </div>
                     <div class="product-info">
                         <p class="name"><?= $product; ?></p>
                         <p class="prize"><?= $value['prize']; ?></p>
