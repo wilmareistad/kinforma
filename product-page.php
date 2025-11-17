@@ -2,11 +2,44 @@
 require __DIR__ . "/header.php";
 require __DIR__ . '/ten-percent.php';
 require __DIR__ . "/data.php";
-// 1️⃣ Kontrollera att "product" finns i URL
-?>
-<?php
-$productName = $_GET['product'];
-$product = $products[$productName];
+
+if (!isset($_GET['product']) || empty($_GET['product'])) {
+    echo '<h2>Alla produkter</h2>';
+    echo '<div class="products-list">';
+    foreach ($products as $key => $value) {
+        echo '<a href="product-page.php?product=' . urlencode($key) . '">';
+        echo '<div class="product">';
+        echo '<img src="' . $value['img1'] . '" alt="' . htmlspecialchars($key) . '">';
+        echo '<p class="name">' . htmlspecialchars($key) . '</p>';
+        echo '<p class="prize">' . $value['prize'] . '</p>';
+        echo '</div>';
+        echo '</a>';
+    }
+    echo '</div>';
+    require __DIR__ . '/footer.php';
+    exit;
+}
+
+$requested = mb_strtolower(trim($_GET['product']), 'UTF-8');
+
+$matchedKey = null;
+foreach ($products as $key => $value) {
+    $cleanKey = mb_strtolower(trim($key), 'UTF-8');
+    if ($cleanKey === $requested) {
+        $matchedKey = $key; // behåll originalnyckeln
+        break;
+    }
+}
+
+if (!$matchedKey) {
+    echo "<pre>Ingen match hittades för '$requested'. Tillgängliga keys:</pre>";
+    print_r(array_keys($products));
+    die("Produkten finns inte.");
+}
+
+$productName = htmlspecialchars($matchedKey, ENT_QUOTES, 'UTF-8');
+$product = $products[$matchedKey];
+
 ?>
 
 <section class="product-page-hero">
@@ -58,7 +91,8 @@ $product = $products[$productName];
 
             <div class="product-carousel">
                 <?php
-                foreach ($products as $product => $value) { ?>
+                foreach ($products as $productKey => $value) { ?>
+                <a href="product-page.php?product=<?= urlencode($productKey); ?>">
                     <section class="product">
                         <img src="<?= $value['img1']; ?>" alt="<?= $product; ?> img1" />
                         <div class="product-info">

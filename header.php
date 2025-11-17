@@ -36,6 +36,11 @@ require __DIR__ . '/data.php';
         <div>EN</div>
       </button>
     </div>
+    
+    <div class="backpack">
+      <img src="" alt="backpack">
+
+    </div>
 
     <div class="logo">
       <img src="/logga/full-logga.png" alt="Kinforma Logo">
