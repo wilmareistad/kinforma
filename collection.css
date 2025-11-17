@@ -250,7 +250,6 @@
 
 .product {
     flex-shrink: 0;
-    width: 100vw;
 }
 
 .product-info {
@@ -273,6 +272,10 @@
     width: 26px;
     height: 26px;
 
+}
+
+.collection-product {
+    width: 100vw;
 }
 
 .name-heart {
@@ -323,7 +326,7 @@
         width: 100%;
     }
 
-    .product {
+    .collection-product {
         width: 423.905px;
     }
 

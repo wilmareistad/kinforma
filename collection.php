@@ -85,7 +85,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                 $foundProducts++;
             ?>
                 <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
-                    <section class="product">
+                    <section class="collection-product">
                         <img src="<?= $value['img2']; ?>" alt="<?= htmlspecialchars($product); ?> img2" />
                 </a>
                 <div class="product-info">
