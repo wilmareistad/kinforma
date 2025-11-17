@@ -35,7 +35,7 @@ p {
 }
 
 .ten-percent {
-  background: var(--darkgreen, #1F2B28);
+  background: var(--orange);
   display: flex;
   width: 100vw;
   height: 40px;
@@ -46,15 +46,16 @@ p {
 }
 
 .ten-percent a {
-  color: var(--background-color);
+  color: var(--darkgreen);
 /* Mobil/p/p regular */
   font-family: var(--font-base);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: -0.48px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 html {

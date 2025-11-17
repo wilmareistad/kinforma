@@ -1,10 +1,10 @@
 <?php
 
 $products = [
-    'Vårvindr' => [
+    'Frost' => [
         'img1' => '/assets/flaskor/vit/Gemini_Generated_Image_r1bwkxr1bwkxr1bw.png',
         'description' => 'Vårvindr (vårvindar) - en lätt jacka för vårens skiftande väder.',
-        'prize' => '2000SEK',
+        'prize' => '4499 KR',
         'category' => 'kläder',
         'color' => 'Orange',
         'img2' => '/assets/Jackor/orange/Jacket_Thermal_Orange_Front.png',
@@ -14,10 +14,10 @@ $products = [
         'img6' => 'assets/Jackor/Gemini_Generated_Image_etfosdetfosdetfo.png',
     ],
 
-    'Fjall' => [
+    'Fjäll' => [
         'img1' => 'assets/Jackor/grön/Gemini_Generated_Image_ieljzcieljzcielj.png',
         'description' => 'Fjall (berg) är en pålitlig jacka för alla äventyr',
-        'prize' => '2000SEK',
+        'prize' => '3499 KR',
         'category' => 'kläder',
         'color' => 'Grön',
         'img2' => 'assets/Jackor/grön/Jacket_Puffer_Green_Front.png',
@@ -27,10 +27,10 @@ $products = [
         'img6' => 'assets/flaskor/orange/Gemini_Generated_Image_btlygkbtlygkbtly (1).png',
     ],
 
-    'Flass' => [
+    'Källa' => [
         'img1' => 'assets/flaskor/Gemini_Generated_Image_ykn6blykn6blykn6.png',
-        'description' => 'Flass (vattendrag/åar)',
-        'prize' => '400SEK',
+        'description' => 'Beskrivning',
+        'prize' => '399 KR',
         'category' => 'merch',
         'color' => 'Vit',
         'img2' => 'assets/flaskor/vit/Water_Bottle_White.png',
@@ -53,10 +53,10 @@ $products = [
     ],
 
 
-    'Fastning' => [
+    'Fäste' => [
         'img1' => 'assets/karbinhake/Karbinhake_Miljo_Tillsammans_Med_Andra_Varianter.png',
         'description' => 'Fastning (fäste/befästning) - stark och tillförlitlig karbinhake',
-        'prize' => '200SEK',
+        'prize' => '199 KR',
         'category' => 'merch',
         'img2' => 'assets/karbinhake/Karbinhake_Orange_Framifran_9_10.png',
         'img3' => 'assets/karbinhake/Karbinhake_Orange_Framifran-Oppen_Hake_9_10.png',
@@ -113,10 +113,10 @@ $products = [
         'img6' => 'assets/',
     ],
 
-    'Hjálmr' => [
+    'Huva' => [
         'img1' => 'assets/nyckelring.jpg',
         'description' => 'Hjálmr (hjälm/huvudbonad) - en snygg och värmande beanie',
-        'prize' => '200SEK',
+        'prize' => '339 KR',
         'category' => 'accessoarer',
         'img2' => 'assets/',
         'img3' => 'assets/',
