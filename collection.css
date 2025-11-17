@@ -311,7 +311,7 @@
     }
 
     .tho-collection-frame p {
-        width: 710px;
+        /*width: 710px;*/
         font-size: 1.25rem;
         display: flex;
         align-items: flex-end;

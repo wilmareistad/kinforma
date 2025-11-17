@@ -10,7 +10,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
 <div class="collection-container">
     <section class="tho-collection-frame">
         <h3>THØ KOLLEKTIONEN<span class="orange">.</span></h3>
-        <p>Här ska det stå en mer förklarande text om Kinforma. Den ska inte vara så lång men den ska innehålla mer detaljerad info om märket.</p>
+        <p>THØ lanseras februari 2026 – en kollektion för tiden när naturen tinar men kylan dröjer sig kvar. Funktionella, hållbara plagg som funkar i skiftet mellan vinter och vår. Regenerativt mode möter tech-driven design, skapat för dig som vill utvecklas, leva aktivt och vara en del av något större</p>
     </section>
     <section class="sort-filter">
         <!-- Sökruta -->
