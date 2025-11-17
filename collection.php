@@ -89,7 +89,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                     <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
                         <img src="<?= $value['img2']; ?>" alt="<?= htmlspecialchars($product); ?> img2" />
                     </a>
-                    <div class="product-info">
+                    <div class="product-inform">
                         <div class="name-heart">
                             <p class="name"><?= htmlspecialchars($product); ?></p>
                             <img src="/assets/heart.svg">

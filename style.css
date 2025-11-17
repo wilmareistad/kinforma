@@ -256,11 +256,13 @@ font-style: italic;
 } */
 
 .product-info {
+  display: flex;
+  flex-direction: column;
   padding: 8px 16px;
   align-items: flex-start;
-  gap: 4px;
+  gap: 8px;
   align-self: stretch;
-  width: 312px; /* LÄGG TILL - matchar bildbredden */
+  width: 312px; /* LÄGG TILL - matchar bildbredden */  
 }
 
 .product-info p {
