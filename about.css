@@ -17,12 +17,7 @@
     width: 100vw;
 }
 
-/* .container-about img {
-    margin-top: 64px;
-    margin-bottom: 64px;
-    object-fit: cover;
 
-} */
 
 .klubb-kin {
 color: var(--background-color, #FFFDF8);
@@ -38,21 +33,11 @@ bottom: 37px;
 margin: 0;
 } 
 
-/* .container-about div {
-    position: relative;
-    width: 100vw;
-    height: 528px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}  */
+
 
 .about-hero {
     position: relative;
     width: 100vw;
-    /* height: 528px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -88,5 +73,45 @@ margin: 0;
 }
 
 .about-info h3, .about-info p {
-    width: 50vw;
+    /* width: 50vw; */
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.persenol-design p, .smart-textil p, .sustainable-fashion h3 {
+    text-align: end;
+}
+
+@media (min-width: 1024px) {
+
+    .about-info h3 {
+        font-size: 3rem;
+        font-weight: 600;
+
+    }
+
+    .about-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 128px 128px;
+        max-width: 1200px; 
+        margin: 128px auto;
+        /* align-items: start; */
+    }
+
+    .about-info h3, .about-info p {
+        max-width: 384px;
+        width: 100%;
+        margin: 0;
+        justify-self: center;
+    }
+
+    .persenol-design, .smart-textil,  .sustainable-fashion {
+        display: contents; 
+    }
+
+    .about-hero p {
+        font-size: 4rem;
+    }
 }
