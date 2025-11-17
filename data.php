@@ -1,7 +1,7 @@
 <?php
 
 $products = [
-    'Frost' => [
+    'FROST' => [ //Jacka 1 orange
         'img1' => '/assets/flaskor/vit/Gemini_Generated_Image_r1bwkxr1bwkxr1bw.png',
         'description' => 'Vårvindr (vårvindar) - en lätt jacka för vårens skiftande väder.',
         'prize' => '4499 KR',
@@ -14,7 +14,7 @@ $products = [
         'img6' => 'assets/Jackor/Gemini_Generated_Image_etfosdetfosdetfo.png',
     ],
 
-    'Fjäll' => [
+    'FJÄLL' => [ //Jacka 2 dun grön
         'img1' => 'assets/Jackor/grön/Gemini_Generated_Image_ieljzcieljzcielj.png',
         'description' => 'Fjall (berg) är en pålitlig jacka för alla äventyr',
         'prize' => '3499 KR',
@@ -27,7 +27,7 @@ $products = [
         'img6' => 'assets/flaskor/orange/Gemini_Generated_Image_btlygkbtlygkbtly (1).png',
     ],
 
-    'Källa' => [
+    'KÄLLA' => [ //Flaska
         'img1' => 'assets/flaskor/Gemini_Generated_Image_ykn6blykn6blykn6.png',
         'description' => 'Beskrivning',
         'prize' => '399 KR',
@@ -40,7 +40,7 @@ $products = [
         'img6' => 'assets/flaskor/vit/Gemini_Generated_Image_qxrcaeqxrcaeqxrc',
     ],
 
-    'Sólskjøldr' => [
+    'Sólskjøldr' => [ //Solkräm
         'img1' => 'assets/solkräm/Gemini_Generated_Image_5vukd85vukd85vuk.png',
         'description' => 'Sólskjøldr (solsköld) - skyddar mot solens starka strålar, med Spf 50',
         'prize' => '400SEK',
@@ -53,7 +53,7 @@ $products = [
     ],
 
 
-    'Fäste' => [
+    'FÄSTE' => [ //Karbinhake
         'img1' => 'assets/karbinhake/Karbinhake_Miljo_Tillsammans_Med_Andra_Varianter.png',
         'description' => 'Fastning (fäste/befästning) - stark och tillförlitlig karbinhake',
         'prize' => '199 KR',
@@ -65,7 +65,7 @@ $products = [
         'img6' => 'assets/karbinhake/Karbinhake_Silver_Framifran_9_10.png',
     ],
 
-    'Eldhjarta' => [
+    'Eldhjarta' => [ //flaskvärmare
         'img1' => 'assets/flaskor/grön/Gemini_Generated_Image_n9bjodn9bjodn9bj.png',
         'description' => 'Eldhjarta (eldhjärta) - en innovativ flaskvärmare, som håller drycken varm länge',
         'prize' => '2000SEK',
@@ -77,7 +77,7 @@ $products = [
         'img6' => 'assets/Bottlewarmer_Preview.png',
     ],
 
-    'Ljósstafr' => [
+    'Ljósstafr' => [ //sunstick
         'img1' => 'assets/sunstick_Preview.png',
         'description' => 'Ljósstafr (ljusstav) - kompakt solskydd för ansiktet',
         'prize' => '400SEK',
@@ -89,7 +89,7 @@ $products = [
         'img6' => 'assets/',
     ],
 
-    'keychainName' => [
+    'keychainName' => [ //nyckelring
         'img1' => 'assets/nyckelring.jpg',
         'description' => 'Beskrivning',
         'prize' => '200SEK',
@@ -101,7 +101,7 @@ $products = [
         'img6' => 'assets/',
     ],
 
-    'Ský' => [
+    'Ský' => [ //solglasögon
         'img1' => 'assets/nyckelring.jpg',
         'description' => 'Ský (moln) - solglasögon som skyddar ögonen från starkt ljus',
         'prize' => '200SEK',
@@ -113,7 +113,7 @@ $products = [
         'img6' => 'assets/',
     ],
 
-    'Huva' => [
+    'HUVA' => [ //benie
         'img1' => 'assets/nyckelring.jpg',
         'description' => 'Hjálmr (hjälm/huvudbonad) - en snygg och värmande beanie',
         'prize' => '339 KR',

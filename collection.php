@@ -84,25 +84,27 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
 
                 $foundProducts++;
             ?>
-                <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
-                    <section class="collection-product">
-                        <img src="<?= $value['img2']; ?>" alt="<?= htmlspecialchars($product); ?> img2" />
-                </a>
-                <div class="product-info">
-                    <div class="name-heart">
-                        <p class="name"><?= htmlspecialchars($product); ?></p>
-                        <img src="/assets/heart.svg">
-                    </div>
-                    <p class="prize"><?= htmlspecialchars($value['prize']); ?></p>
-                </div>
-    </section>
-<?php } ?>
 
-<?php if ($foundProducts === 0): ?>
-    <p class="no-results">Inga produkter hittades</p>
-<?php endif; ?>
-</div>
-</section>
+                <section class="collection-product">
+                    <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
+                        <img src="<?= $value['img2']; ?>" alt="<?= htmlspecialchars($product); ?> img2" />
+                    </a>
+                    <div class="product-info">
+                        <div class="name-heart">
+                            <p class="name"><?= htmlspecialchars($product); ?></p>
+                            <img src="/assets/heart.svg">
+                        </div>
+                        <p class="prize"><?= htmlspecialchars($value['prize']); ?></p>
+                    </div>
+                </section>
+
+            <?php } ?>
+
+            <?php if ($foundProducts === 0): ?>
+                <p class="no-results">Inga produkter hittades</p>
+            <?php endif; ?>
+        </div>
+    </section>
 </div>
 
 <?php

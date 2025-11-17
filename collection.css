@@ -49,6 +49,7 @@
     padding: 0 0 8px;
     border-bottom: 1px solid var(--darkgreen, #1F2B28);
     margin: 20px;
+    align-self: flex-start;
 }
 
 .search-input-wrapper {
@@ -241,7 +242,7 @@
 
 .product-card img {
     align-self: stretch;
-    width: 200px;
+    width: 50%;
 }
 
 .product-card a {
@@ -333,6 +334,10 @@
     .product-info img {
         height: 24px;
         width: 24px;
+    }
+
+    .name-heart {
+        width: 380px;
     }
 }
 
