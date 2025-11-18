@@ -204,6 +204,10 @@ html {
   scroll-snap-type: x mandatory;
 }
 
+.product a {
+  text-decoration: none;
+}
+
 .product {
   flex-shrink: 0;
   scroll-snap-align: start;
@@ -369,6 +373,11 @@ html {
 
   .THO {
     margin-bottom: 95px;
+  }
+
+  .product-link img {
+    width: 100%;
+    height: 100%;
   }
 
   .sustainability-container {
