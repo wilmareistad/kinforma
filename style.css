@@ -346,6 +346,26 @@ a.hero-img-link {
   flex-shrink: 0;
 }
 
+@media (min-width: 768px) {
+  .product-carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .product-carousel::-webkit-scrollbar-thumb {
+      background: transparent; /* Osynlig som standard */
+      border-radius: 4px;
+      transition: background 0.3s;
+  }
+
+  .product-carousel:hover::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3); /* Syns vid hover */
+  }
+
+  .product-carousel::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.5);
+  }
+}
+
 @media (min-width: 1024px) {
   .about {
     width: 100vw;

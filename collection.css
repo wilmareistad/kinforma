@@ -315,9 +315,31 @@ align-self: stretch;
         height: 420px;
         width: 50%;
     }
+
+    .product-link img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .collection-product {
+        width: 423.905px;
+    }
+
+    .product-inform img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .name-heart {
+        width: 380px;
+    }
 }
 
 @media (min-width: 1024px) {
+    .search-form {
+        width: 96vw;
+    }
+
     .tho-collection-frame {
         display: flex;
         width: 1232px;
@@ -343,24 +365,6 @@ align-self: stretch;
 
     .category-frame-underlined p, .category-frame p, .search-form input[type="text"], .name, .prize {
         font-size: 1.25rem;
-    }
-    
-    .product-link img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .collection-product {
-        width: 423.905px;
-    }
-
-    .product-inform img {
-        height: 24px;
-        width: 24px;
-    }
-
-    .name-heart {
-        width: 380px;
     }
 }
 
