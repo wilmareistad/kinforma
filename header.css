@@ -34,6 +34,13 @@ header {
   header {
     padding: 64px 16px 16px 16px;
   }
+
+  .backpack{
+  margin-right: 16px;
+  height: 100%;
+
+
+  }
 }
 
 /* Hamburger */
@@ -183,7 +190,8 @@ header {
   }}
 
 .backpack{
-  margin-right: 20px;
+  margin-right: 28px;
+  height: 100%;
 
 
   }
