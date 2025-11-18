@@ -36,9 +36,9 @@ require __DIR__ . '/data.php';
         <div>EN</div>
       </button>
     </div>
-    
+
     <div class="backpack">
-      <img src="" alt="backpack">
+      <img src="/assets/shopping-cart.svg" alt="backpack">
 
     </div>
 

@@ -17,10 +17,10 @@ require __DIR__ . '/data.php';
 
 <section class="about">
     <div class="text-box">
-        <h3>Upplev en ny dimension av mode med vår senaste kollektion <span class="special">thø</span><span class="orange">.</span> Designad av <span class="special">dig</span>, drivet av <span class="special">teknik</span>, skapat för <span class="special">planeten</span><span class="orange">.</span></h3>
+        <h3>FRAMTIDENS MODE, <span class="special">IDAG</span><span class="orange">.</span></h3>
     </div>
     <div class="description-box">
-        <p>Kinforma är ett svenskt varumärke som förenar mode, teknik och hållbarhet. Vi skapar produkter för skiftet mellan vinter och vår – funktionella, långlivade och transparenta i både material och process. Vårt fokus är regenerativt mode, smarta lösningar och en gemenskap för människor som vill leva medvetet och forma sin egen framtid.</p>
+        <p>Upplev en ny dimension av mode med vår senaste kollektion Thø. Designad av dig, drivet av teknik, skapat för planeten.</p>
     </div>
 </section>
 

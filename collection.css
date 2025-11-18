@@ -249,9 +249,9 @@
     text-decoration: none;
 }
 
-.product {
+/*.product {
     flex-shrink: 0;
-}
+}*/
 
 .product-inform {
     /*display: flex;
