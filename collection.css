@@ -233,7 +233,7 @@
 .product-card {
     background: var(--background-color, #FFFDF8);
     display: flex;
-    width: 100vw; /*110vw för mobil?*/
+    width: 100%; /*110vw för mobil?*/
     align-items: flex-start;
     flex-shrink: 0;
     flex-wrap: wrap;
@@ -242,7 +242,7 @@
 
 .product-card img {
     align-self: stretch;
-    width: 50%;
+    width: 100%;
 }
 
 .product-card a {
@@ -268,7 +268,8 @@
     align-items: flex-start;
     gap: 6px;
     align-self: stretch;
-    width: 195px;
+    width: auto;
+    box-sizing: border-box;
 }
 
 .product-inform img {
@@ -284,7 +285,8 @@
 }
 
 .collection-product {
-    width: 100vw;
+    width: calc(50% - 1.5px); /* Hälften avbredden minus halva gap */
+    box-sizing: border-box;
 }
 
 .name-heart {
@@ -309,7 +311,7 @@ align-self: stretch;
 }
 
 @media (min-width: 768px) {
-    .product-card img {
+    .product-link img {
         height: 420px;
         width: 50%;
     }
@@ -343,8 +345,8 @@ align-self: stretch;
         font-size: 1.25rem;
     }
     
-    .product-card img {
-        height: 100%;
+    .product-link img {
+        height: 420px;
         width: 100%;
     }
 
@@ -364,7 +366,7 @@ align-self: stretch;
 
 /* Large desktop */
 @media (min-width: 1440px) {
-    .product-card img {
+    .product-link img {
         height: 420px;
         width: 100%;
     }
