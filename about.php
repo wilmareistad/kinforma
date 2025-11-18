@@ -10,7 +10,7 @@ require __DIR__ . '/ten-percent.php';
     <section class="container-about">
         <div class="about-hero">
             <p class="klubb-kin">Våra arbetsätt</p>
-            <img class="team" src="https://a.storyblok.com/f/142343/720x1080/25fa951564/vandring-header-autumn-winter-mobile-720x1080px.jpg/m/500x0/smart" alt="bild på teamet">
+            <img class="team" src="assets/Jackor/grön/Gemini_Generated_Image_qqui63qqui63qqui.png" alt="bild på teamet">
             <!-- <button>Våra arbetsätt</button> -->
         </div>
     </section>
