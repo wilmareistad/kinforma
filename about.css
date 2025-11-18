@@ -114,4 +114,8 @@ margin: 0;
     .about-hero p {
         font-size: 4rem;
     }
+
+    .smart-textil-container img {
+    max-height: 700px;
+}
 }
