@@ -253,6 +253,39 @@
     flex-shrink: 0;
 }*/
 
+.collection-img-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1; /* Eller den ratio dina bilder har, t.ex. 1/1 för kvadrat */
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.collection-img-wrapper img {
+    position: absolute; /* Viktigt! Båda bilderna ska vara absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.collection-img-default {
+    opacity: 1;
+    z-index: 1;
+}
+
+.collection-img-hover {
+    opacity: 0;
+    z-index: 2;
+}
+
+.collection-img-wrapper:hover .collection-img-hover {
+    opacity: 1;
+}
+
 .product-inform {
     /*display: flex;
     padding: 8px 0px;
@@ -281,7 +314,6 @@
 .product-inform img:hover {
     width: 26px;
     height: 26px;
-
 }
 
 .collection-product {
@@ -323,6 +355,11 @@ align-self: stretch;
 
     .collection-product {
         width: 423.905px;
+    }
+
+    .collection-product img {
+        width: 100%;
+        height: 100%;
     }
 
     .product-inform img {
