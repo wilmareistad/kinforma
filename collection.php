@@ -95,7 +95,10 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                     <div class="product-inform">
                         <div class="name-heart">
                             <p class="name"><?= htmlspecialchars($product); ?></p>
-                            <img src="/assets/heart.svg">
+                            <img src="/assets/heart.svg"
+                                alt="Favorit"
+                                class="heart-icon"
+                                onclick="this.classList.toggle('favorited')">
                         </div>
                         <p class="prize"><?= htmlspecialchars($value['prize']); ?></p>
                     </div>

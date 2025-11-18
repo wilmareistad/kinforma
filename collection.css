@@ -338,6 +338,10 @@ align-self: stretch;
     margin: 0px;
 }
 
+.heart-icon.favorited {
+    content: url('/assets/heart-filled.svg');
+}
+
 .product-inform .prize {
     margin: 0px;
 }
