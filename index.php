@@ -12,7 +12,9 @@ require __DIR__ . '/data.php';
         <p>Th&oslash</p>
         <p>Th&oslash</p>
     </div>
-    <img src="/assets/d6efe9213f26c4c1fe907476e258e5c25a53fbb5.png">
+    <a href="/collection.php" class="hero-img-link">
+        <img src="/assets/d6efe9213f26c4c1fe907476e258e5c25a53fbb5.png">
+    </a>
 </section>
 
 <section class="about">
@@ -54,7 +56,7 @@ require __DIR__ . '/data.php';
 <section class="sustainability-container">
     <img src="/assets/Hero_PW1_Gräslandskap.png" alt="Om oss">
     <div class="sust-text">
-        <h3>Innovation till och för framtiden.</h3>
+        <h3>Innovation för en aktiv livsstil.</h3>
         <div class="a-frame">
             <a href="about.php">Om Kinforma</a>
         </div>
