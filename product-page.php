@@ -26,13 +26,16 @@ $product = $products[$productName];
             <h2><?= $productName; ?></h2>
             <p class="prize"><?= $product['prize']; ?></p>
             <p class="name"><?= $product['description']; ?></p>
+            <div class="color-picker-cont">
+                <?php
+                require __DIR__ . "/test.php";
+                ?>
+            </div>
         </section>
     </div>
 </section>
 
-<?php
-require __DIR__ . "/test.php";
-?>
+
 
 <section class="THO">
     <div class="products-container">

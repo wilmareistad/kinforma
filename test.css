@@ -125,3 +125,9 @@
   height: 28px;
   background-color: var(--orange);
 }
+
+@media (min-width: 768px) {
+  .color-choice {
+    margin-top: 64px;
+  }
+}
