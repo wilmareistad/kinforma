@@ -43,7 +43,10 @@ require __DIR__ . '/data.php';
     </div>
 
     <div class="logo">
+      <a href="index.php">
       <img src="/logga/full-logga.png" alt="Kinforma Logo">
+  </a>
+
     </div>
 
     <!-- Hamburger checkbox -->
@@ -60,7 +63,7 @@ require __DIR__ . '/data.php';
     <nav class="nav">
       <a href="index.php">Hem</a>
       <a href="about.php">Om oss</a>
-      <a href="product-page.php">Thö kollektion</a>
+      <a href="product-page.php">Th&oslash 2026</a>
     </nav>
 
 
