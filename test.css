@@ -1,6 +1,6 @@
 .color-choice {
   padding: 20px;
-  width: 100%;
+  /* width: 100%; */
   margin-top: 100px;
 }
 
@@ -13,6 +13,7 @@
   display: flex;
   align-items: flex-start;
   gap: 16px;
+  width: 100%;
 }
 
 .colors {
@@ -104,23 +105,23 @@
 .salvia:before {
   content: "";
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: var(--lightgreen);
 }
 
 .ormbunke:before {
   content: "";
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: var(--darkgreen);
 }
 
 .signal:before {
   content: "";
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: var(--orange);
 }
