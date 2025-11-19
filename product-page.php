@@ -30,6 +30,10 @@ $product = $products[$productName];
     </div>
 </section>
 
+<?php
+require __DIR__ . "/test.php";
+?>
+
 <section class="THO">
     <div class="products-container">
         <div class="THO-explore">
