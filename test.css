@@ -1,7 +1,7 @@
 .color-choice {
-  padding: 20px;
+  padding: 0px 20px 64px 20px;
   /* width: 100%; */
-  margin-top: 100px;
+  margin-top: 48px;
 }
 
 .color-choice a,
@@ -83,7 +83,7 @@
   background-color: transparent;
   color: var(--darkgreen);
   cursor: pointer;
-  padding-right: 6px;
+  padding-right: 3px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -105,23 +105,23 @@
 .salvia:before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: var(--lightgreen);
 }
 
 .ormbunke:before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: var(--darkgreen);
 }
 
 .signal:before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: var(--orange);
 }
