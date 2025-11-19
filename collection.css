@@ -418,4 +418,36 @@ align-self: stretch;
 }
 
 
+.button{
+    margin-left: 650px;
+   margin-top: 120px;
+    width: 120px;
+    height: 37px;
+    top: 2062px;
+    left: 137px;
+    border: 1px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 24px;    
+    gap: 4px;
+   font-size: 15px;
+}
 
+@media(min-width: 430px){
+
+
+    .button{
+    margin-left:150px;
+   margin-top: 150px;
+    width: 120px;
+    height: 37px;
+    border: 1px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 24px;    
+    gap: 4px;
+   font-size: 15px;
+}
+}
