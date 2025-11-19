@@ -19,6 +19,7 @@ require __DIR__ . '/data.php';
   <link rel="stylesheet" href="sustainability.css">
   <link rel="stylesheet" href="newsletter.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="test.css">
 
 </head>
 
@@ -44,8 +45,8 @@ require __DIR__ . '/data.php';
 
     <div class="logo">
       <a href="index.php">
-      <img src="/logga/full-logga.png" alt="Kinforma Logo">
-  </a>
+        <img src="/logga/full-logga.png" alt="Kinforma Logo">
+      </a>
 
     </div>
 

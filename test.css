@@ -1,0 +1,127 @@
+.color-choice {
+  padding: 20px;
+  /* width: 100%; */
+  margin-top: 100px;
+}
+
+.color-choice a,
+.color-choice p {
+  font-weight: 500;
+}
+
+.color-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.colors button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+  align-self: stretch;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.basket {
+  width: 100%;
+  background-color: #1f2b28;
+  color: white;
+  border: none;
+  padding: 15px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.size-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.size-button button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--lightgreen);
+}
+
+.guide-size {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.color-choice p {
+  margin: 0;
+}
+
+.color-buttons button,
+.size-button button {
+  background-color: transparent;
+  color: var(--darkgreen);
+  cursor: pointer;
+  padding-right: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.signal {
+  border: 1px solid var(--darkgreen);
+}
+
+.ormbunke,
+.salvia {
+  border: 1px solid var(--lightgreen);
+}
+
+.guide-size a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.salvia:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--lightgreen);
+}
+
+.ormbunke:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--darkgreen);
+}
+
+.signal:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--orange);
+}
