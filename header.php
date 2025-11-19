@@ -60,8 +60,7 @@ require __DIR__ . '/data.php';
     <nav class="nav">
       <a href="index.php">Hem</a>
       <a href="about.php">Om oss</a>
-      <a href="product-page.php">Produkter</a>
-      <a href="#">Kontakta oss</a>
+      <a href="product-page.php">Thö kollektion</a>
     </nav>
 
 
