@@ -37,8 +37,8 @@ $product = $products[$productName];
 
 
 
-<section class="THO">
-    <div class="products-container">
+<section class="section-prod-cont">
+    <div class="prod-cont">
         <div class="THO-explore">
             <h3>Komplettera</h3>
             <a href="collection.php"><img src="/assets/Pil.svg"></a>
