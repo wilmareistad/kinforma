@@ -1,12 +1,10 @@
-<link rel="stylesheet" href="test.css">
-
 <section class="color-choice">
     <div class="colors">
         <p>Färg</p>
         <div class="color-buttons">
-            <button>Signal</button>
-            <button>Ormbunke</button>
-            <button>Salvia</button>
+            <button class="signal">Signal</button>
+            <button class="ormbunke">Ormbunke</button>
+            <button class="salvia">Salvia</button>
         </div>
     </div>
     <div class="guide">
@@ -22,5 +20,5 @@
             <button>XL</button>
         </div>
     </div>
-    <button class="varukorg">Lägg i varukorgen</button>
+    <button class="basket">Lägg i varukorgen</button>
 </section>
