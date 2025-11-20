@@ -2,9 +2,9 @@
     <div class="colors">
         <p>Färg</p>
         <div class="color-buttons">
-            <button class="signal">Signal</button>
-            <button class="ormbunke">Ormbunke</button>
-            <button class="salvia">Salvia</button>
+            <button class="signal"><span>Signal</span></button>
+            <button class="ormbunke"><span>Ormbunke</span></button>
+            <button class="salvia"><span>Salvia</span></button>
         </div>
     </div>
     <div class="guide">
