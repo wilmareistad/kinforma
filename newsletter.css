@@ -1,0 +1,75 @@
+.invite-box {
+    padding: 16px;
+    width: 100vw;
+    margin-top: 112px;
+    margin-bottom: 112px;
+}
+    
+input[type="email"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #1F2B28;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 25px;
+    background-color: var(--background-color);
+}
+
+button {
+    width: 100%;
+    background-color: #1F2B28;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.invite-box p {
+    margin: 0;
+}
+
+
+.invite-box h3 {
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+@media (min-width: 768px) {
+    .footer-deskt {
+      display: flex;
+    }
+}
+
+@media (min-width: 1024px) {
+    .invite-box{
+        /*width: 50%;*/
+        margin-top: 80px;
+        display: flex;
+        width: 411px;
+        flex-direction: column;
+        gap: 32px;
+        flex-shrink: 0;
+    }
+
+    .footer-deskt {
+        display: flex;
+        width: 1280px;
+        height: 383px;
+        padding: 0 24px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 180px;
+        flex-shrink: 0;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+    .footer-deskt {
+      display: flex;
+    }
+}

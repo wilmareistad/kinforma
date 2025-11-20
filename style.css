@@ -1,0 +1,458 @@
+:root {
+    --background-color: #FFFDF8;
+    --orange: #EF8231;
+    --darkgreen: #1F2B28;
+    --midgreen: #6F7770;
+    --lightgreen: #B9C7BB;
+    --font-base: "IBM Plex Sans", Sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--background-color);
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 16px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 16px;
+}
+
+p {
+  margin: 16px;
+}
+
+.ten-percent {
+  background: var(--darkgreen);
+  display: flex;
+  width: 100vw;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.ten-percent a {
+  color: var(--background-color);
+  font-family: var(--font-base);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.img-logo {
+  height: 499px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tho-text {
+  height: 406px;
+  flex-shrink: 0;
+}
+
+.tho-text p {
+  color: var(--darkgreen, #1F2B28);
+  font-family: "IBM Plex Serif";
+  font-size: 10rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  height: 110px;
+}
+
+.img-logo img {
+  /*position: absolute;
+  height: 354.68px;
+  flex-shrink: 0;
+  aspect-ratio: 298.35 / 354.68;
+  align-self: center; */
+
+  position: absolute;
+    /* height: 100%; */
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-self: anchor-center;
+}
+
+a.hero-img-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about {
+  display: flex;
+  padding: 0 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 64px 0px 51px;
+}
+
+.text.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.about h3 {
+  color: var(--darkgreen, #1F2B28);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0px;
+  color: var(--background-dark, #1F2B28);
+}
+
+.about h3 .special {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 500;
+}
+
+.about h3 .orange {
+  color: var(--Orange, #EF8231);
+}
+
+.description-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  width: 333px;
+}
+
+.description-box p {
+  color: var(--darkgreen, #1F2B28);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  text-transform: none;
+  margin: 0px;
+}
+
+.THO {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 88px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.THO-explore {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  gap: 4px;
+}
+
+.THO-explore h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--darkgreen, #1F2B28);
+  font-family: var(--font-base);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.THO-explore h3 .italic {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+}
+
+.THO-explore img {
+  width: 25px;
+  height: 14px;
+}
+
+.product-carousel {
+  width: 100vw;
+  display: flex;
+  gap: 8px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.product a {
+  text-decoration: none;
+}
+
+.product {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.product-image-wrapper {
+  position: relative;
+  height: 312px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.product-img-default {
+  position: relative;
+}
+
+.product-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product:hover .product-img-hover {
+  opacity: 1;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  width: 312px;  
+}
+
+.product-info p {
+  margin: 0px;
+}
+
+.name {
+  color: var(--darkgreen, #1F2B28);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.prize {
+  color: var(--darkgreen, #1F2B28);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.sustainability-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin: 8px 0px;
+  height: 433px;
+}
+
+.sustainability-container img {
+  height: 433px;
+}
+
+.sustainability-container h3 {
+  width: 261px;
+  color: var(--background-color, #FFFDF8);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+}
+
+.a-frame {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--background-color);
+}
+
+.a-frame a {
+  color: var(--background-color);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.sust-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 55px 65px 32px 65px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .product-carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .product-carousel::-webkit-scrollbar-thumb {
+      background: transparent; /* Osynlig som standard */
+      border-radius: 4px;
+      transition: background 0.3s;
+  }
+
+  .product-carousel:hover::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3); /* Syns vid hover */
+  }
+
+  .product-carousel::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-logo img {
+    height: 100%;
+    flex-shrink: 0;
+    /* aspect-ratio: 298.35 / 354.68; */
+    align-self: center;
+    width: 60%;
+    display: flex;
+    justify-self: anchor-center;
+  }
+  
+  .about {
+    width: 100vw;
+    padding: 0 24px;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 128px;
+  }
+
+  .text-box {
+    flex-direction: column;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .description-box {
+    width: 525px;
+    display: flex;
+    align-self: center;
+    gap: 8px;
+  } 
+
+  .description-box p {
+    display: flex;
+    align-self: flex-start;
+    font-size: 1.25rem;
+  }
+
+  .THO {
+    margin-bottom: 95px;
+  }
+
+  .product-link img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sustainability-container {
+    height: 631px;
+  }
+
+  .sustainability-container h3 {
+    width: 100vw;
+    align-self: stretch;
+  }
+
+  .sustainability-container img {
+    height: 631px;
+    width: 100vw;
+  }
+
+  .sust-text {
+    padding: 55px 65px;
+  }
+
+  .footer-deskt {
+    display: flex;
+    width: 1280px;
+    height: 383px;
+    padding: 0 24px;       
+    align-items: flex-start;
+    gap: 180px;
+    flex-shrink: 0;
+    justify-self: center;
+    margin-top: 40px;
+    margin-bottom: 168px;
+  }
+}

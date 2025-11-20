@@ -1,0 +1,30 @@
+.sustainability-hero {
+position: relative;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.team {
+width: 100%;
+display: block;
+height: 633px;
+object-fit: cover;
+}
+
+.sustainability {
+position: absolute;
+color: #FFFDF8;
+text-align: center;
+font-family: "IBM Plex Serif";
+font-size: 4rem;
+font-style: italic;
+font-weight: 400;
+letter-spacing: -1.92px;
+bottom: 82px;
+}
+
+.more {
+    height: 517px;
+}

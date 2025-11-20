@@ -1,0 +1,223 @@
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 12px 24.462px 11.683px 24px;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0px;
+  z-index: 10
+}
+
+
+/* Logo */
+.logo {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--darkgreen);
+  z-index: 10;
+  
+}
+.logo img {
+  max-height: 55px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-height: 100px; 
+    padding-bottom: 20px;
+  }
+
+  header {
+    padding: 64px 16px 16px 16px;
+  }
+
+  .backpack{
+  margin-right: 16px;
+  height: 100%;
+
+
+  }
+}
+
+/* Hamburger */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.75rem;
+  height: 1.40rem;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.bar {
+  height: 0.1875rem;
+  width: 100%;
+  background-color: var(--darkgreen);
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+/* Navigation */
+/* .nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  background-color: var(--background-color);
+  border: 0.125rem solid var(--accent-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 50vw;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.3);
+  z-index: 15;
+} */
+
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed; /* Gör att den täcker skärmen */
+    top: 0; 
+    left: 0;
+    width: 100vw; /* hela bredden */
+    height: 30vh; /* halva skärmhöjden */
+    background-color: var(--background-color);
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+    padding: 2rem 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+    z-index: 15;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+  }
+
+
+.nav a {
+  text-decoration: none;
+  color: var(--darkgreen);
+  padding: 0.5rem 0;
+  display: block;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Visa meny när checkbox markerad */
+#menu-toggle:checked ~ .nav {
+  display: flex;
+}
+
+/* Hamburger → X */
+#menu-toggle:checked + .menu-icon .bar:nth-child(1) {
+  transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+}
+
+#menu-toggle:checked + .menu-icon .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(0.375rem, -0.375rem);
+}
+
+/* Desktop */
+@media (min-width: 48rem) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0 1rem;
+  }
+
+}
+
+.container
+{
+  display: flex;
+  padding: 12px 0;
+  align-items: center;
+  gap: 8px;
+}
+.InaContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.lang-buttons {
+  display: flex;
+  gap: 4px;
+  margin-right: auto
+}
+
+.SV, .EN {
+  color: var(--darkgreen);
+  background-color: var(--background-color);
+  padding: 4px 8px;
+  font-family: "IBM Plex Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+/* Hover-effekt */
+.SV:hover, .EN:hover {
+  color: var(--background-color);       
+  background-color: var(--darkgreen);   
+  transform: scale(1.05);               
+
+  
+}
+.lang-buttons :hover{
+  background-color: var(--orange);
+
+}
+/* Hamburgarmeny mobil*/
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed; /* Gör att den täcker skärmen */
+    top: 0; 
+    left: 0;
+    width: 100vw; /* hela bredden */
+    height: 50vh; /* halva skärmhöjden */
+    background-color: var(--background-color);
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+    padding: 2rem 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+    z-index: 15;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }}
+
+.backpack{
+  margin-right: 28px;
+  height: 100%;
+
+
+  }

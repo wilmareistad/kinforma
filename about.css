@@ -1,0 +1,121 @@
+.team {
+    width: 100%;
+    height: 528px;
+    margin: 0;
+    object-fit: cover;
+
+}
+
+.smart-textil-container img {
+    width: 50%;
+    height: auto;
+}
+
+.smart-textil-container {
+    display: flex;
+    gap: 4px;
+    width: 100vw;
+}
+
+
+
+.klubb-kin {
+color: var(--background-color, #FFFDF8);
+text-align: center;
+font-family: "IBM Plex Serif";
+font-size: 2.25rem;
+font-style: italic;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: -2.16px;
+position: absolute;
+bottom: 37px;
+margin: 0;
+} 
+
+
+
+.about-hero {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+ 
+.container-about button {
+    width: auto;
+    position: absolute;
+    background: none;
+    border: 1px solid var(--BG, #FFFDF8);
+    padding: 8px 20px;
+    bottom: 26px;
+}
+
+.persenol-design, .smart-textil, .sustainable-fashion {
+    display: flex;
+}
+
+.persenol-design h3::after, .smart-textil h3::after, .sustainable-fashion h3::after {
+  content: ".";
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.about-info h3, .about-info p {
+    /* width: 50vw; */
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.persenol-design p, .smart-textil p, .sustainable-fashion h3 {
+    text-align: end;
+}
+
+@media (min-width: 1024px) {
+
+    .about-info h3 {
+        font-size: 3rem;
+        font-weight: 600;
+
+    }
+
+    .about-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 128px 128px;
+        max-width: 1200px; 
+        margin: 128px auto;
+        /* align-items: start; */
+    }
+
+    .about-info h3, .about-info p {
+        max-width: 384px;
+        width: 100%;
+        margin: 0;
+        justify-self: center;
+    }
+
+    .persenol-design, .smart-textil,  .sustainable-fashion {
+        display: contents; 
+    }
+
+    .about-hero p {
+        font-size: 4rem;
+    }
+
+    .smart-textil-container img {
+    max-height: 700px;
+}
+}
