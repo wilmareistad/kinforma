@@ -11,15 +11,18 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
     $productName = $_GET['product'];
     $product = $products[$productName];
     $colors = $product['colors'];
+
+    // Standardfärg (första färgen)
+    $firstColor = array_key_first($colors);
+    $currentImages = $colors[$firstColor]['images'];
 ?>
 
     <section class="product-page-hero">
         <div class="product-cont">
             <section class="product-images">
-                <img src="<?= $product['img1']; ?>" alt="<?= $productName; ?> img1" />
-                <img src="<?= $product['img2']; ?>" alt="<?= $productName; ?> img2" />
-                <img src="<?= $product['img3']; ?>" alt="<?= $productName; ?> img3" />
-                <img src="<?= $product['img4']; ?>" alt="<?= $productName; ?> img4" />
+                <?php foreach ($currentImages as $imageKey => $imagePath) { ?>
+                    <img src="<?= $imagePath; ?>" alt="<?= $productName; ?> <?= $imageKey; ?>" />
+                <?php } ?>
             </section>
 
             <section class="product-detail">
@@ -48,8 +51,8 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
                     <section class="product">
                         <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
                             <div class="product-image-wrapper">
-                                <img src="<?= $value['img1']; ?>" class="product-img-default" alt="<?= $product; ?>" />
-                                <img src="<?= $value['img2']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
+                                <img src="<?= $value['images']['default']; ?>" class="product-img-default" alt="<?= $product; ?>" />
+                                <img src="<?= $value['images']['hover']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
                             </div>
                         </a>
                         <div class="product-info">

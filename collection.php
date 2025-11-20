@@ -88,8 +88,8 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                 <section class="collection-product">
                     <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
                         <div class="collection-img-wrapper">
-                            <img src="<?= $value['img2']; ?>" class="collection-img-default" alt="<?= htmlspecialchars($product); ?> img2" />
-                            <img src="<?= $value['img1']; ?>" class="collection-img-hover" alt="<?= htmlspecialchars($product); ?> img1" />
+                            <img src="<?= $value['images']['default']; ?>" class="collection-img-default" alt="<?= htmlspecialchars($product); ?> img2" />
+                            <img src="<?= $value['images']['hover']; ?>" class="collection-img-hover" alt="<?= htmlspecialchars($product); ?> img1" />
                         </div>
                     </a>
                     <div class="product-inform">
