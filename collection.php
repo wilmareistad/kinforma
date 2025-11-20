@@ -112,7 +112,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
         </div>
     </section>
 </div>
-
+<button class="button">Ladda fler</button>
 <?php
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
