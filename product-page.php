@@ -62,6 +62,40 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         </div>
     </section>
 
+    <script>
+        const productColors = <?= json_encode($product['colors']); ?>;
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const imgElements = document.querySelectorAll(".product-images img");
+
+            const colorButtons = document.querySelectorAll(".color-buttons button");
+
+            colorButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    // vilken färg klickade vi på?
+                    const color = button.classList.contains('signal') ? 'signal' :
+                        button.classList.contains('ormbunke') ? 'ormbunke' :
+                        button.classList.contains('salvia') ? 'salvia' : null;
+
+                    if (!color || !productColors[color]) return;
+
+                    // byt bilderna
+                    productColors[color].forEach((src, index) => {
+                        if (imgElements[index]) {
+                            imgElements[index].src = src;
+                        }
+                    });
+
+                    // highlight vald knapp (valfritt)
+                    colorButtons.forEach(btn => btn.classList.remove("active-color"));
+                    button.classList.add("active-color");
+                });
+            });
+        });
+    </script>
+
+
 <?php
 } else {
     echo "<p>Produkten hittades inte.</p>";

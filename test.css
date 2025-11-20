@@ -24,7 +24,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  width: 363px;
+  width: 100%;
 }
 
 /* .colors button {
@@ -42,7 +42,7 @@
   align-self: stretch;
   padding-bottom: 32px;
   padding-top: 32px;
-  width: 393px;
+  width: 100%;
   padding-right: 16px;
 }
 
