@@ -45,7 +45,7 @@ require __DIR__ . '/data.php';
 
     <div class="logo">
       <a href="index.php">
-        <img src="Logga/full-logga.png" alt="Kinforma Logo">
+        <img src="/Logga/nyKinforma_logga.png" alt="ny Kinforma Logo">
       </a>
 
     </div>

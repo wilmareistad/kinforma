@@ -417,29 +417,39 @@ align-self: stretch;
     }
 }
 
-
-.button{
-    margin-left: 650px;
-   margin-top: 120px;
-    width: 120px;
-    height: 37px;
-    top: 2062px;
-    left: 137px;
-    border: 1px;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    padding: 8px 24px;    
-    gap: 4px;
-   font-size: 15px;
+/* Tvingande centering - lägg sist i din CSS */
+.button {
+  display: block !important;
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  margin: 40px auto !important; /* horisontell centrering */
+  width: fit-content; /* knappens bredd efter innehåll */
+  min-width: 120px;
+  box-sizing: border-box;
+  border: 1px solid black;
 }
 
-@media(min-width: 430px){
+/*
+.button{
+    align-items: center;
+    width: 120px;
+    height: 37px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 24px;    
+    gap: 4px;
+    font-size: 15px;
+}
+*/
 
-
+@media(min-width: 344px){
     .button{
+    align-items: center;    
     margin-left:150px;
-   margin-top: 150px;
+    margin-top: 150px;
     width: 120px;
     height: 37px;
     border: 1px;
@@ -448,6 +458,7 @@ align-self: stretch;
     border: 1px solid black;
     padding: 8px 24px;    
     gap: 4px;
-   font-size: 15px;
+    font-size: 15px;
+
 }
 }
