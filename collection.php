@@ -16,7 +16,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
         <!-- Sökruta -->
         <form action="" method="GET" class="search-form">
             <div class="search-input-wrapper">
-                <img src="/assets/search-icon.svg" alt="Sök" class="search-icon">
+                <img src="assets/search-icon.svg" alt="Sök" class="search-icon">
                 <input
                     type="text"
                     name="search"
@@ -59,7 +59,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
             </div>
 
             <div class="filter">
-                <img src="/assets/Filter.svg" alt="filter-icon">
+                <img src="assets/Filter.svg" alt="filter-icon">
             </div>
     </section>
 
@@ -95,7 +95,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                     <div class="product-inform">
                         <div class="name-heart">
                             <p class="name"><?= htmlspecialchars($product); ?></p>
-                            <img src="/assets/heart.svg"
+                            <img src="assets/heart.svg"
                                 alt="Favorit"
                                 class="heart-icon"
                                 onclick="this.classList.toggle('favorited')">
