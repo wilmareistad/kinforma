@@ -245,6 +245,7 @@ a.hero-img-link {
   object-fit: cover;
   display: block;
   transition: opacity 0.3s ease;
+  aspect-ratio: 1 / 1;
 }
 
 .product-img-default {

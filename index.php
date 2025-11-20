@@ -39,8 +39,8 @@ require __DIR__ . '/data.php';
                 <section class="product">
                     <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
                         <div class="product-image-wrapper">
-                            <img src="<?= $value['img1']; ?>" class="product-img-default" alt="<?= $product; ?>" />
-                            <img src="<?= $value['img2']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
+                            <img src="<?= $value['images']['default']; ?>" class="product-img-default" alt="<?= $product; ?>" />
+                            <img src="<?= $value['images']['hover']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
                         </div>
                     </a>
                     <div class="product-info">
@@ -54,7 +54,7 @@ require __DIR__ . '/data.php';
 </section>
 
 <section class="sustainability-container">
-    <img src="assets/Hero_PW1_Gräslandskap.png" alt="Om oss">
+    <img src="assets/OmKinforma.png" alt="Om Kinforma">
     <div class="sust-text">
         <h3>Innovation för en aktiv livsstil.</h3>
         <div class="a-frame">
