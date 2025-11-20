@@ -13,7 +13,7 @@ require __DIR__ . '/data.php';
         <p>Th&oslash</p>
     </div>
     <a href="/collection.php" class="hero-img-link">
-        <img src="/assets/d6efe9213f26c4c1fe907476e258e5c25a53fbb5.png">
+        <img src="/assets/KinformaHeroTest-noBG.gif">
     </a>
 </section>
 

@@ -84,11 +84,20 @@ html {
 }
 
 .img-logo img {
-  position: absolute;
+  /*position: absolute;
   height: 354.68px;
   flex-shrink: 0;
   aspect-ratio: 298.35 / 354.68;
-  align-self: center; 
+  align-self: center; */
+
+  position: absolute;
+    /* height: 100%; */
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-self: anchor-center;
 }
 
 a.hero-img-link {
@@ -367,6 +376,16 @@ a.hero-img-link {
 }
 
 @media (min-width: 1024px) {
+  .img-logo img {
+    height: 100%;
+    flex-shrink: 0;
+    /* aspect-ratio: 298.35 / 354.68; */
+    align-self: center;
+    width: 60%;
+    display: flex;
+    justify-self: anchor-center;
+  }
+  
   .about {
     width: 100vw;
     padding: 0 24px;
