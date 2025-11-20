@@ -62,6 +62,8 @@ require __DIR__ . '/data.php';
 
     <!-- Navigering -->
     <nav class="nav">
+      <br>
+      <br>
       <a href="index.php">Hem</a>
       <a href="about.php">Om oss</a>
       <a href="collection.php">Th&oslash 2026</a>
