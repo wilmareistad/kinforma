@@ -13,7 +13,7 @@ require __DIR__ . '/data.php';
         <p>Th&oslash</p>
     </div>
     <a href="/collection.php" class="hero-img-link">
-        <img src="/assets/KinformaHeroTest-noBG.gif">
+        <img src="assets/KinformaHeroTest-noBG.gif">
     </a>
 </section>
 
@@ -30,7 +30,7 @@ require __DIR__ . '/data.php';
     <div class="products-container">
         <div class="THO-explore">
             <h3>Utforska <span class="italic">Th&oslash</span> kollektionen</h3>
-            <a href="collection.php"><img src="/assets/Pil.svg"></a>
+            <a href="collection.php"><img src="assets/Pil.svg"></a>
         </div>
 
         <div class="product-carousel">
@@ -54,7 +54,7 @@ require __DIR__ . '/data.php';
 </section>
 
 <section class="sustainability-container">
-    <img src="/assets/Hero_PW1_Gräslandskap.png" alt="Om oss">
+    <img src="assets/Hero_PW1_Gräslandskap.png" alt="Om oss">
     <div class="sust-text">
         <h3>Innovation för en aktiv livsstil.</h3>
         <div class="a-frame">

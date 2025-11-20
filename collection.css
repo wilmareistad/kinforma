@@ -339,7 +339,7 @@ align-self: stretch;
 }
 
 .heart-icon.favorited {
-    content: url('/assets/heart-filled.svg');
+    content: url('assets/heart-filled.svg');
 }
 
 .product-inform .prize {
