@@ -39,13 +39,13 @@ require __DIR__ . '/data.php';
     </div>
 
     <div class="backpack">
-      <img src="/assets/shopping-cart.svg" alt="backpack">
+      <img src="assets/shopping-cart.svg" alt="backpack">
 
     </div>
 
     <div class="logo">
       <a href="index.php">
-        <img src="/logga/full-logga.png" alt="Kinforma Logo">
+        <img src="Logga/full-logga.png" alt="Kinforma Logo">
       </a>
 
     </div>
