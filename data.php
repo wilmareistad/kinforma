@@ -117,7 +117,7 @@ $products = [
         'category' => 'merch',
         'images' => [
             'default' => 'assets/karbinhake/Carabiner_Vis.png',
-            'hover' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_1.png',
+            'hover' => 'assets/karbinhake/Grön/Carbiner_Green_1.png',
         ],
         'colors' => [
             'orange' => [
@@ -149,8 +149,8 @@ $products = [
         'prize' => '399 kr',
         'category' => 'teknik',
         'images' => [
-            'default' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_3.png',
-            'hover' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_1.png',
+            'default' => 'assets/flaskvärmare/orange/Water_Bottle_Warmer_Orange_Vis.png',
+            'hover' => 'assets/flaskvärmare/orange/Water_Bottle_Heater_Orange_1.png',
         ],
         'colors' => [
             'orange' => [
