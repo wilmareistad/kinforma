@@ -1,19 +1,22 @@
 .color-choice {
-  padding: 20px;
-  /* width: 100%; */
-  margin-top: 100px;
+    padding: 0px 20px 64px 20px;
+    width: 100vw;
+    margin-top: 48px;
 }
 
 .color-choice a,
 .color-choice p {
   font-weight: 500;
+  margin: 0px;
 }
 
 .color-buttons {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
 }
 
 .colors {
@@ -21,6 +24,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  width: 363px;
 }
 
 .colors button {
@@ -37,6 +41,8 @@
   align-self: stretch;
   padding-bottom: 32px;
   padding-top: 32px;
+  width: 393px;
+  padding-right: 16px;
 }
 
 .basket {
@@ -65,6 +71,14 @@
   align-items: center;
   gap: 8px;
   border: 1px solid var(--lightgreen);
+
+  color: var(--darkgreen);
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .guide-size {
@@ -75,7 +89,10 @@
 }
 
 .color-choice p {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 .color-buttons button,
@@ -83,18 +100,37 @@
   background-color: transparent;
   color: var(--darkgreen);
   cursor: pointer;
-  padding-right: 12px;
+  /*padding-right: 3px;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0;*/
+  display: flex;
+
+height: 32px;
+padding: 4px 12px;
+justify-content: center;
+align-items: center;
+gap: 4px;
 }
 
 .signal {
   border: 1px solid var(--darkgreen);
+  color: var(--darkgreen);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .ormbunke,
 .salvia {
   border: 1px solid var(--lightgreen);
+  color: var(--darkgreen);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .guide-size a {
@@ -105,23 +141,30 @@
 .salvia:before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: var(--lightgreen);
 }
 
 .ormbunke:before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: var(--darkgreen);
 }
 
 .signal:before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: var(--orange);
+}
+
+@media (min-width: 768px) {
+  .color-choice {
+    margin-top: 64px;
+    width: 100%;
+  }
 }
