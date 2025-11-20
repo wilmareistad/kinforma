@@ -5,7 +5,10 @@ header {
   padding: 12px 24.462px 11.683px 24px;
   justify-content: space-between;
   background-color: var(--background-color);
+  position: sticky;
+  top: 0px;
 }
+
 
 /* Logo */
 .logo {
