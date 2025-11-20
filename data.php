@@ -1,128 +1,275 @@
 <?php
 
 $products = [
-    'SKARE' => [ //Jacka 1 orange
-        'img1' => '/assets/flaskor/vit/Gemini_Generated_Image_r1bwkxr1bwkxr1bw.png',
+    'SKARE' => [ //Jacka thermal orange & grön
+        'name' => 'SKARE',
         'description' => 'En rörlig och vindavstötande jacka som funkar i övergångsväder. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '3599 kr',
         'category' => 'kläder',
-        'color' => 'Orange',
-        'img2' => '/assets/Jackor/orange/Jacket_Thermal_Orange_Front.png',
-        'img3' => '/assets/Jackor/orange/Jacket_Thermal_Orange_Back.png',
-        'img4' => '/assets/Jackor/orange/Gemini_Generated_Image_k90ck1k90ck1k90c.png',
-        'img5' => 'assets/Jackor/Gemini_Generated_Image_9l237l9l237l9l23.png',
-        'img6' => 'assets/Jackor/Gemini_Generated_Image_etfosdetfosdetfo.png',
+        'images' => [
+            'default' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_Vis.png',
+            'hover' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_1.png',
+        ],
+        'colors' => [
+            'orange' => [
+                'images' => [
+                    'img1' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_1.png',
+                    'img2' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_2.png',
+                    'img3' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_Vis.png',
+                    'img4' => 'assets/Material_View_Orange.png',
+                ],
+                'green' => [
+                    'img1' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_1.png',
+                    'img2' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_2.png',
+                    'img3' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_3.png',
+                    'img4' => 'assets/Material_View_Green.png',
+                ]
+            ]
+        ]
     ],
 
     'FROST' => [ //Jacka 2 dun grön
-        'img1' => 'assets/Jackor/grön/Gemini_Generated_Image_ieljzcieljzcielj.png',
+        'name' => 'FROST',
         'description' => 'En varm och slitstark teknisk jacka som står emot vind och kyla. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '4499 kr',
         'category' => 'kläder',
-        'color' => 'Grön',
-        'img2' => 'assets/Jackor/grön/Jacket_Puffer_Green_Front.png',
-        'img3' => 'assets/Jackor/grön/Jacket_Puffer_Green_Back.png',
-        'img4' => 'assets/Jackor/grön/Grön-puffer1.png',
-        'img5' => 'assets/Jackor/Gemini_Generated_Image_i2zi8oi2zi8oi2zi.png',
-        'img6' => 'assets/flaskor/orange/Gemini_Generated_Image_btlygkbtlygkbtly (1).png',
+        'images' => [
+            'default' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_Vis.png',
+            'hover' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_1.png',
+        ],
+        'colors' => [
+            'orange' => [
+                'images' => [
+                    'img1' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_1.png',
+                    'img2' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_2.png',
+                    'img3' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_Vis.png',
+                    'img4' => 'assets/Material_View_Orange.png',
+                ],
+                'green' => [
+                    'img1' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_1.png',
+                    'img2' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_2.png',
+                    'img3' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_3.png',
+                    'img4' => 'assets/Material_View_Green.png',
+                ]
+            ]
+        ]
     ],
 
     'KÄLLA' => [ //Flaska
-        'img1' => 'assets/flaskor/Gemini_Generated_Image_ykn6blykn6blykn6.png',
+        'name' => 'KÄLLA',
         'description' => 'En tålig och isolerande vattenflaska som håller rätt temperatur. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '399 kr',
         'category' => 'merch',
-        'color' => 'Vit',
-        'img2' => 'assets/flaskor/vit/Water_Bottle_White.png',
-        'img3' => 'assets/flaskor/vit/Water_Bottle_White_Closeup_Detail.png',
-        'img4' => 'assets/flaskor/vit/Gemini_Generated_Image_f2kyt5f2kyt5f2ky.png',
-        'img5' => 'assets/flaskor/vit/Gemini_Generated_Image_jlktzjlktzjlktzj.png',
-        'img6' => 'assets/flaskor/vit/Gemini_Generated_Image_qxrcaeqxrcaeqxrc',
+        'images' => [
+            'default' => 'assets/flaskor/orange/Water_Bottle_Orange_Vis.png',
+            'hover' => 'assets/flaskor/orange/Water_Bottle_Orange_1.png',
+        ],
+        'colors' => [
+            'orange' => [
+                'images' => [
+                    'img1' => 'assets/flaskor/orange/Water_Bottle_Orange_1.png',
+                    'img2' => 'assets/flaskor/orange/Water_Bottle_Orange_2.png',
+                    'img3' => 'assets/flaskor/orange/Water_Bottle_Orange_Closeup_3.png',
+                    'img4' => 'assets/flaskor/orange/Water_Bottle_Orange_4.png',
+                ],
+                'green' => [
+                    'img1' => 'assets/flaskor/grön/Water_Bottle_Green_1.png',
+                    'img2' => 'assets/flaskor/grön/Water_Bottle_Green_2.png',
+                    'img3' => 'assets/flaskor/grön/Water_Bottle_Green_3.png',
+                    'img4' => 'assets/flaskor/grön/Water_Bottle_Green_Vis.png',
+                ],
+                'white' => [
+                    'img1' => 'assets/flaskor/vit/Water_Bottle_White_1.png',
+                    'img2' => 'assets/flaskor/vit/Water_Bottle_White_2.png',
+                    'img3' => 'assets/flaskor/vit/Water_Bottle_White_3.png',
+                    'img4' => 'assets/flaskor/vit/Water_Bottle_White_4.png',
+                ]
+            ]
+        ]
     ],
 
     'LJUS' => [ //Solkräm
-        'img1' => 'assets/solkräm/Gemini_Generated_Image_5vukd85vukd85vuk.png',
+        'name' => 'LJUS',
         'description' => 'En effektiv och långvarig solkräm som skyddar i skiftande ljus. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '79 kr',
         'category' => 'beauty',
-        'img2' => 'assets/solkräm/Sunscreen_Front.png',
-        'img3' => 'assets/solkräm/Sunscreen_Back.png',
-        'img4' => 'assets/solkräm/Gemini_Generated_Image_9c8ld39c8ld39c8l.png',
-        'img5' => 'assets/solkräm/Gemini_Generated_Image_henv6whenv6whenv.png',
-        'img6' => 'assets/solkräm/Gemini_Generated_Image_l8zd6sl8zd6sl8zd.png',
+        'images' => [
+            'default' => 'assets/solkräm/Sunscreen_3.png',
+            'hover' => 'assets/solkräm/Sunscreen_1.png',
+        ],
+        'colors' => [
+            'white' => [
+                'images' => [
+                    'img1' => 'assets/solkräm/Sunscreen_1.png',
+                    'img2' => 'assets/solkräm/Sunscreen_2.png',
+                    'img3' => 'assets/solkräm/Sunscreen_3.png',
+                    'img4' => 'assets/solkräm/Sunscreen_4.png',
+                ]
+            ]
+        ]
     ],
 
 
     'FÄSTE' => [ //Karbinhake
-        'img1' => 'assets/karbinhake/Karbinhake_Miljo_Tillsammans_Med_Andra_Varianter.png',
+        'name' => 'FÄSTE',
         'description' => 'En robust och pålitlig karbinhake som tål kyla och fukt. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '199 kr',
         'category' => 'merch',
-        'img2' => 'assets/karbinhake/Karbinhake_Orange_Framifran_9_10.png',
-        'img3' => 'assets/karbinhake/Karbinhake_Orange_Framifran-Oppen_Hake_9_10.png',
-        'img4' => 'assets/karbinhake/Close_Up_Logga_Test_2.png',
-        'img5' => 'assets/karbinhake/Close_Up_Logga_Test_3.png',
-        'img6' => 'assets/karbinhake/Karbinhake_Silver_Framifran_9_10.png',
+        'images' => [
+            'default' => 'assets/karbinhake/Carabiner_Vis.png',
+            'hover' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_1.png',
+        ],
+        'colors' => [
+            'orange' => [
+                'images' => [
+                    'img1' => 'assets/karbinhake/Orange/Carbiner_Orange_1.png',
+                    'img2' => 'assets/karbinhake/Orange/Carbiner_Orange_2.png',
+                    'img3' => 'assets/karbinhake/Orange/Carbiner_Orange_3.png',
+                    'img4' => 'assets/karbinhake/Carabiner_4.png',
+                ],
+                'green' => [
+                    'img1' => 'assets/karbinhake/Grön/Carbiner_Green_1.png',
+                    'img2' => 'assets/karbinhake/Grön/Carbiner_Green_2.png',
+                    'img3' => 'assets/karbinhake/Grön/Carbiner_Green_3.png',
+                    'img4' => 'assets/karbinhake/Carabiner_4.png',
+                ],
+                'silver' => [
+                    'img1' => 'assets/karbinhake/Silver/Carbiner_Silver_1.png',
+                    'img2' => 'assets/karbinhake/Silver/Carbiner_Silver_2.png',
+                    'img3' => 'assets/karbinhake/Silver/Carbiner_Silver_3.png',
+                    'img4' => 'assets/karbinhake/Carabiner_4.png',
+                ]
+            ]
+        ]
     ],
 
     'VÄRM' => [ //flaskvärmare
-        'img1' => 'assets/flaskor/grön/Gemini_Generated_Image_n9bjodn9bjodn9bj.png',
+        'name' => 'VÄRM',
         'description' => 'En isolerande flaskvärmare som behåller värmen länge. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '399 kr',
         'category' => 'teknik',
-        'img2' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_Front.png',
-        'img3' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_Closeup_1.png',
-        'img4' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_Closeup_2.png',
-        'img5' => 'assets/flaskor/grön/Water_Bottle_Green_With_Heather',
-        'img6' => 'assets/Bottlewarmer_Preview.png',
+        'images' => [
+            'default' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_3.png',
+            'hover' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_1.png',
+        ],
+        'colors' => [
+            'orange' => [
+                'images' => [
+                    'img1' => 'assets/flaskvärmare/orange/Water_Bottle_Heater_Orange_1.png',
+                    'img2' => 'assets/flaskvärmare/orange/Water_Bottle_Heater_Orange_2.png',
+                    'img3' => 'assets/flaskvärmare/orange/Water_Bottle_Heater_Orange_3.png',
+                    'img4' => 'assets/flaskvärmare/orange/Water_Bottle_Warmer_Orange_Vis.png',
+                ],
+                'green' => [
+                    'img1' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_1.png',
+                    'img2' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_2.png',
+                    'img3' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_3.png',
+                    'img4' => 'assets/flaskvärmare/grön/Water_Bottle_Warmer_Green_4.png',
+                ],
+                'white' => [
+                    'img1' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White1.png',
+                    'img2' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White_Closeup_2.png',
+                    'img3' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White_Closeup_3.png',
+                    'img4' => 'assets/flaskvärmare/vit/bottleheater-white-4.png',
+                ]
+            ]
+        ]
     ],
 
     'FJÄLLSOL' => [ //sunstick
-        'img1' => 'assets/sunstick_Preview.png',
+        'name' => 'FJÄLLSOL',
         'description' => 'En kompakt och kraftfull sunstick som skyddar i starkt solljus. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '399 kr',
         'category' => 'beauty',
-        'img2' => 'assets/',
-        'img3' => 'assets/',
-        'img4' => 'assets/',
-        'img5' => 'assets/',
-        'img6' => 'assets/',
+        'images' => [
+            'default' => 'assets/',
+            'hover' => 'assets/',
+        ],
+        'colors' => [
+            'white' => [
+                'images' => [
+                    'img1' => 'assets/',
+                    'img2' => 'assets/',
+                    'img3' => 'assets/',
+                    'img4' => 'assets/',
+                ]
+            ]
+        ]
     ],
 
     'MOSSA' => [ //handkräm
-        'img1' => 'assets/nyckelring.jpg',
+        'name' => 'MOSSA',
         'description' => 'En mjukgörande och skyddande handkräm för kallt klimat. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '299 kr',
         'category' => 'beauty',
-        'img2' => 'assets/',
-        'img3' => 'assets/',
-        'img4' => 'assets/',
-        'img5' => 'assets/',
-        'img6' => 'assets/',
+        'images' => [
+            'default' => 'assets/',
+            'hover' => 'assets/',
+        ],
+        'colors' => [
+            'white' => [
+                'images' => [
+                    'img1' => 'assets/',
+                    'img2' => 'assets/',
+                    'img3' => 'assets/',
+                    'img4' => 'assets/',
+                ]
+            ]
+        ]
     ],
 
     'SKIMMER' => [ //solglasögon
-        'img1' => 'assets/nyckelring.jpg',
+        'name' => 'SKIMMER',
         'description' => 'Skyddande och klara linser som fungerar i växlande ljus. Lätta, hållbara och gjorda för aktiva dagar när vinter möter vår.',
         'prize' => '899 kr',
         'category' => 'accessoarer',
-        'img2' => 'assets/',
-        'img3' => 'assets/',
-        'img4' => 'assets/',
-        'img5' => 'assets/',
-        'img6' => 'assets/',
+        'images' => [
+            'default' => 'assets/',
+            'hover' => 'assets/',
+        ],
+        'colors' => [
+            'orange' => [
+                'images' => [
+                    'img1' => 'assets/',
+                    'img2' => 'assets/',
+                    'img3' => 'assets/',
+                    'img4' => 'assets/',
+                ],
+                'green' => [
+                    'img1' => 'assets/',
+                    'img2' => 'assets/',
+                    'img3' => 'assets/',
+                    'img4' => 'assets/',
+                ]
+            ]
+        ]
     ],
 
     'HUVA' => [ //benie
-        'img1' => 'assets/nyckelring.jpg',
+        'name' => 'HUVA',
         'description' => 'En varm och slitstark mössa som håller vinden ute. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '339 kr',
         'category' => 'accessoarer',
-        'img2' => 'assets/',
-        'img3' => 'assets/',
-        'img4' => 'assets/',
-        'img5' => 'assets/',
-        'img6' => 'assets/',
+        'images' => [
+            'default' => 'assets/',
+            'hover' => 'assets/',
+        ],
+        'colors' => [
+            'orange' => [
+                'images' => [
+                    'img1' => 'assets/',
+                    'img2' => 'assets/',
+                    'img3' => 'assets/',
+                    'img4' => 'assets/',
+                ],
+                'green' => [
+                    'img1' => 'assets/',
+                    'img2' => 'assets/',
+                    'img3' => 'assets/',
+                    'img4' => 'assets/',
+                ]
+            ]
+        ]
     ],
 ];
 
