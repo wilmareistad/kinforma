@@ -44,7 +44,7 @@
 /* Sökruta */
 .search-form {
     display: flex;
-    width: 353px;
+    width: 90%;
     gap: 16px;
     padding: 0 0 8px;
     border-bottom: 1px solid var(--darkgreen, #1F2B28);
