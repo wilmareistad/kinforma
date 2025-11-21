@@ -2,6 +2,7 @@
 require __DIR__ . "/header.php";
 require __DIR__ . '/ten-percent.php';
 require __DIR__ . "/data.php";
+require __DIR__ . "/datacopy.php";
 
 // 1️⃣ Kontrollera att "product" finns i URL
 ?>
@@ -11,15 +12,18 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
     $productName = $_GET['product'];
     $product = $products[$productName];
     $colors = $product['colors'];
+
+    // Standardfärg (första färgen)
+    $firstColor = array_key_first($colors);
+    $currentImages = $colors[$firstColor]['images'];
 ?>
 
     <section class="product-page-hero">
         <div class="product-cont">
             <section class="product-images">
-                <img src="<?= $product['img1']; ?>" alt="<?= $productName; ?> img1" />
-                <img src="<?= $product['img2']; ?>" alt="<?= $productName; ?> img2" />
-                <img src="<?= $product['img3']; ?>" alt="<?= $productName; ?> img3" />
-                <img src="<?= $product['img4']; ?>" alt="<?= $productName; ?> img4" />
+                <?php foreach ($currentImages as $imageKey => $imagePath) { ?>
+                    <img src="<?= $imagePath; ?>" alt="<?= $productName; ?> <?= $imageKey; ?>" />
+                <?php } ?>
             </section>
 
             <section class="product-detail">
@@ -39,7 +43,7 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         <div class="prod-cont">
             <div class="THO-explore">
                 <h3>Komplettera</h3>
-                <a href="collection.php"><img src="/assets/Pil.svg"></a>
+                <a href="collection.php"><img src="assets/Pil.svg"></a>
             </div>
 
             <div class="product-carousel">
@@ -48,8 +52,8 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
                     <section class="product">
                         <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
                             <div class="product-image-wrapper">
-                                <img src="<?= $value['img1']; ?>" class="product-img-default" alt="<?= $product; ?>" />
-                                <img src="<?= $value['img2']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
+                                <img src="<?= $value['images']['default']; ?>" class="product-img-default" alt="<?= $product; ?>" />
+                                <img src="<?= $value['images']['hover']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
                             </div>
                         </a>
                         <div class="product-info">
@@ -62,32 +66,38 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         </div>
     </section>
 
+
     <script>
         const productColors = <?= json_encode($product['colors']); ?>;
     </script>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const imgElements = document.querySelectorAll(".product-images img");
-
             const colorButtons = document.querySelectorAll(".color-buttons button");
+
+            const colorMap = {
+                'signal': 'orange',
+                'ormbunke': 'green',
+                'salvia': 'white'
+            };
+
+            // Markera första färgen som aktiv vid sidladdning
+            if (colorButtons.length > 0) colorButtons[0].classList.add("active-color");
 
             colorButtons.forEach(button => {
                 button.addEventListener("click", () => {
-                    // vilken färg klickade vi på?
-                    const color = button.classList.contains('signal') ? 'signal' :
-                        button.classList.contains('ormbunke') ? 'ormbunke' :
-                        button.classList.contains('salvia') ? 'salvia' : null;
+                    const colorKey = Object.keys(colorMap).find(c => button.classList.contains(c));
+                    if (!colorKey) return;
 
-                    if (!color || !productColors[color]) return;
+                    const dataKey = colorMap[colorKey];
+                    const colorData = productColors[dataKey];
+                    if (!colorData) return;
 
-                    // byt bilderna
-                    productColors[color].forEach((src, index) => {
-                        if (imgElements[index]) {
-                            imgElements[index].src = src;
-                        }
+                    Object.values(colorData.images).forEach((src, index) => {
+                        if (imgElements[index]) imgElements[index].src = src;
                     });
 
-                    // highlight vald knapp (valfritt)
                     colorButtons.forEach(btn => btn.classList.remove("active-color"));
                     button.classList.add("active-color");
                 });
@@ -95,11 +105,7 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         });
     </script>
 
-
 <?php
 } else {
     echo "<p>Produkten hittades inte.</p>";
 }
-
-require __DIR__ . '/newsletter.php';
-require __DIR__ . '/footer.php';
