@@ -104,10 +104,12 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
                     </div>
                 </section>
 
-            <?php } ?>
-
-            <?php if ($foundProducts === 0): ?>
-                <p class="no-results">Inga produkter hittades</p>
+            <?php }
+            if ($foundProducts === 0): ?>
+                <div class="no-results">
+                    <p>Inga produkter hittades<?php if ($searchQuery !== ''): ?> för "<?= htmlspecialchars($searchQuery) ?>"<?php endif; ?></p>
+                    <a href="?" class="reset-link">Visa alla produkter</a>
+                </div>
             <?php endif; ?>
         </div>
     </section>

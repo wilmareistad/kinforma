@@ -93,6 +93,32 @@
     border-color: var(--darkgreen);
 }
 
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.no-results p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--midgreen);
+}
+
+.reset-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--darkgreen);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.reset-link:hover {
+    background-color: #333;
+}
+
 .sort-filter {
     display: flex;
     /* width: 353px; */
