@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . "/header.php";
 require __DIR__ . '/ten-percent.php';
-require __DIR__ . "/data.php";
+require __DIR__ . "/datacopy.php";
 
 // 1️⃣ Kontrollera att "product" finns i URL
 ?>
@@ -65,32 +65,38 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         </div>
     </section>
 
+
     <script>
         const productColors = <?= json_encode($product['colors']); ?>;
     </script>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const imgElements = document.querySelectorAll(".product-images img");
-
             const colorButtons = document.querySelectorAll(".color-buttons button");
+
+            const colorMap = {
+                'signal': 'orange',
+                'ormbunke': 'green',
+                'salvia': 'white'
+            };
+
+            // Markera första färgen som aktiv vid sidladdning
+            if (colorButtons.length > 0) colorButtons[0].classList.add("active-color");
 
             colorButtons.forEach(button => {
                 button.addEventListener("click", () => {
-                    // vilken färg klickade vi på?
-                    const color = button.classList.contains('signal') ? 'signal' :
-                        button.classList.contains('ormbunke') ? 'ormbunke' :
-                        button.classList.contains('salvia') ? 'salvia' : null;
+                    const colorKey = Object.keys(colorMap).find(c => button.classList.contains(c));
+                    if (!colorKey) return;
 
-                    if (!color || !productColors[color]) return;
+                    const dataKey = colorMap[colorKey];
+                    const colorData = productColors[dataKey];
+                    if (!colorData) return;
 
-                    // byt bilderna
-                    productColors[color].forEach((src, index) => {
-                        if (imgElements[index]) {
-                            imgElements[index].src = src;
-                        }
+                    Object.values(colorData.images).forEach((src, index) => {
+                        if (imgElements[index]) imgElements[index].src = src;
                     });
 
-                    // highlight vald knapp (valfritt)
                     colorButtons.forEach(btn => btn.classList.remove("active-color"));
                     button.classList.add("active-color");
                 });
@@ -98,11 +104,7 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         });
     </script>
 
-
 <?php
 } else {
     echo "<p>Produkten hittades inte.</p>";
 }
-
-require __DIR__ . '/newsletter.php';
-require __DIR__ . '/footer.php';
