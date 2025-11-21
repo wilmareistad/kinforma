@@ -372,17 +372,13 @@ a.hero-img-link {
 }
 
 @media (min-width: 1024px) {
-  .img-logo img {
-    height: 80%;
-    align-self: flex-start;
-  }
-  
   .about {
     width: 100vw;
     padding: 0 24px;
     align-items: center;
     gap: 16px;
     margin-bottom: 128px;
+    margin-top: 80px;
   }
 
   .text-box {
