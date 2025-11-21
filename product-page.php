@@ -42,7 +42,7 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         <div class="prod-cont">
             <div class="THO-explore">
                 <h3>Komplettera</h3>
-                <a href="collection.php"><img src="/assets/Pil.svg"></a>
+                <a href="collection.php"><img src="assets/Pil.svg"></a>
             </div>
 
             <div class="product-carousel">
