@@ -7,7 +7,7 @@ Digital design:
 - Nils Birgersson (DD25)
 
 Computer graphics design:
-- Simon (CG25)
+- Simon Torstensson (CG25)
 - Linnea (CG25)
 - Jonathan (CG25)
 

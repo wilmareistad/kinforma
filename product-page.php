@@ -17,14 +17,23 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
     $firstColor = array_key_first($colors);
     $currentImages = $colors[$firstColor]['images'];
 ?>
-
     <section class="product-page-hero">
         <div class="product-cont">
             <section class="product-images">
-                <?php foreach ($currentImages as $imageKey => $imagePath) { ?>
-                    <img src="<?= $imagePath; ?>" alt="<?= $productName; ?> <?= $imageKey; ?>" />
+                <?php
+                $total = count($currentImages);
+                $index = 1; // räknare
+
+                foreach ($currentImages as $imageKey => $imagePath) { ?>
+                    <div class="image-wrapper">
+                        <img src="<?= $imagePath; ?>" alt="<?= $productName; ?> <?= $imageKey; ?>" />
+                        <div class="page-number"><?= $index ?>/<?= $total ?></div>
+                    </div>
+                    <?php $index++; ?>
                 <?php } ?>
+
             </section>
+
 
             <section class="product-detail">
                 <h2><?= $productName; ?></h2>
@@ -109,3 +118,6 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
 } else {
     echo "<p>Produkten hittades inte.</p>";
 }
+
+require __DIR__ . '/newsletter.php';
+require __DIR__ . '/footer.php';
