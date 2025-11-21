@@ -1,7 +1,7 @@
 <?php
 
 $products = [
-    'SKARE' => [ //Jacka thermal orange & grön
+    'SKARE' => [ //Jacka thermal
         'name' => 'SKARE',
         'description' => 'En rörlig och vindavstötande jacka som funkar i övergångsväder. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '3599 kr',
@@ -18,17 +18,20 @@ $products = [
                     'img3' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_Vis.png',
                     'img4' => 'assets/Material_View_Orange.png',
                 ],
-                'green' => [
+            ],
+            'green' => [
+                'images' => [
                     'img1' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_1.png',
                     'img2' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_2.png',
                     'img3' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_3.png',
                     'img4' => 'assets/Material_View_Green.png',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 
-    'FROST' => [ //Jacka 2 dun grön
+
+    'FROST' => [ //Jacka 2 puffer
         'name' => 'FROST',
         'description' => 'En varm och slitstark teknisk jacka som står emot vind och kyla. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '4499 kr',
@@ -45,14 +48,16 @@ $products = [
                     'img3' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_Vis.png',
                     'img4' => 'assets/Material_View_Orange.png',
                 ],
-                'green' => [
+            ],
+            'green' => [
+                'images' => [
                     'img1' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_1.png',
                     'img2' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_2.png',
                     'img3' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_3.png',
                     'img4' => 'assets/Material_View_Green.png',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 
     'KÄLLA' => [ //Flaska
@@ -72,20 +77,24 @@ $products = [
                     'img3' => 'assets/flaskor/orange/Water_Bottle_Orange_Closeup_3.png',
                     'img4' => 'assets/flaskor/orange/Water_Bottle_Orange_4.png',
                 ],
-                'green' => [
+            ],
+            'green' => [
+                'images' => [
                     'img1' => 'assets/flaskor/grön/Water_Bottle_Green_1.png',
                     'img2' => 'assets/flaskor/grön/Water_Bottle_Green_2.png',
                     'img3' => 'assets/flaskor/grön/Water_Bottle_Green_3.png',
                     'img4' => 'assets/flaskor/grön/Water_Bottle_Green_Vis.png',
                 ],
-                'white' => [
+            ],
+            'white' => [
+                'images' => [
                     'img1' => 'assets/flaskor/vit/Water_Bottle_White_1.png',
                     'img2' => 'assets/flaskor/vit/Water_Bottle_White_2.png',
                     'img3' => 'assets/flaskor/vit/Water_Bottle_White_3.png',
                     'img4' => 'assets/flaskor/vit/Water_Bottle_White_4.png',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 
     'LJUS' => [ //Solkräm
@@ -127,20 +136,24 @@ $products = [
                     'img3' => 'assets/karbinhake/Orange/Carbiner_Orange_3.png',
                     'img4' => 'assets/karbinhake/Carabiner_4.png',
                 ],
-                'green' => [
+            ],
+            'green' => [
+                'images' => [
                     'img1' => 'assets/karbinhake/Grön/Carbiner_Green_1.png',
                     'img2' => 'assets/karbinhake/Grön/Carbiner_Green_2.png',
                     'img3' => 'assets/karbinhake/Grön/Carbiner_Green_3.png',
                     'img4' => 'assets/karbinhake/Carabiner_4.png',
                 ],
-                'silver' => [
+            ],
+            'silver' => [
+                'images' => [
                     'img1' => 'assets/karbinhake/Silver/Carbiner_Silver_1.png',
                     'img2' => 'assets/karbinhake/Silver/Carbiner_Silver_2.png',
                     'img3' => 'assets/karbinhake/Silver/Carbiner_Silver_3.png',
                     'img4' => 'assets/karbinhake/Carabiner_4.png',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 
     'VÄRM' => [ //flaskvärmare
@@ -160,20 +173,24 @@ $products = [
                     'img3' => 'assets/flaskvärmare/orange/Water_Bottle_Heater_Orange_3.png',
                     'img4' => 'assets/flaskvärmare/orange/Water_Bottle_Warmer_Orange_Vis.png',
                 ],
-                'green' => [
+            ],
+            'green' => [
+                'images' => [
                     'img1' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_1.png',
                     'img2' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_2.png',
                     'img3' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_3.png',
                     'img4' => 'assets/flaskvärmare/grön/Water_Bottle_Warmer_Green_4.png',
                 ],
-                'white' => [
+            ],
+            'white' => [
+                'images' => [
                     'img1' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White1.png',
                     'img2' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White_Closeup_2.png',
                     'img3' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White_Closeup_3.png',
                     'img4' => 'assets/flaskvärmare/vit/bottleheater-white-4.png',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 
     'FJÄLLSOL' => [ //sunstick
@@ -235,14 +252,16 @@ $products = [
                     'img3' => 'assets/',
                     'img4' => 'assets/',
                 ],
-                'green' => [
+            ],
+            'green' => [
+                'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',
                     'img3' => 'assets/',
                     'img4' => 'assets/',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 
     'HUVA' => [ //benie
@@ -262,15 +281,15 @@ $products = [
                     'img3' => 'assets/',
                     'img4' => 'assets/',
                 ],
-                'green' => [
+            ],
+            'green' => [
+                'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',
                     'img3' => 'assets/',
                     'img4' => 'assets/',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
 ];
-
-/*Skapa array för produktsidan*/
