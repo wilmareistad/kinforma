@@ -87,7 +87,7 @@ header {
     top: 0; 
     left: 0;
     width: 100vw; /* hela bredden */
-    height: 35vh; /* halva skärmhöjden */
+    height: 30vh; /* halva skärmhöjden */
     background-color: var(--background-color);
     border: none;
     border-bottom: 2px solid var(--accent-color);
@@ -145,6 +145,10 @@ header {
       padding: 0 1rem;
     }
     
+  }
+
+  .nav a:first-of-type {
+    padding-top: 2rem;
   }
   
   .container
