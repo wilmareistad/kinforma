@@ -115,7 +115,7 @@
   align-self: stretch;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .product-page-hero{
     display: flex;
     width: 100vw;
@@ -189,7 +189,7 @@
     font-weight: 400;
     line-height: normal;
     margin: 0px 16px;
-    width: 458px;
+    width: 400px;
   }
 
   .product-detail h2 {
