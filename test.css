@@ -197,6 +197,7 @@
 .color-buttons .active {
   border-width: 2px;
   font-weight: 600;
+  border: 1px solid var(--darkgreen, #1F2B28);
 }
 
 .guide-size a {
