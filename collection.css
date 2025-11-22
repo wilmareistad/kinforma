@@ -481,7 +481,7 @@ align-self: stretch;
     height: 37px;
     border: 1px;
     color: black;
-    background-color: white;
+    background-color: var(--background-color);
     border: 1px solid black;
     padding: 8px 24px;    
     gap: 4px;
