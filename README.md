@@ -8,8 +8,8 @@ Digital design:
 
 Computer graphics design:
 - Simon Torstensson (CG25)
-- Linnea (CG25)
-- Jonathan (CG25)
+- Linnéa Olofsson (CG25)
+- Jonatan Jonsson (CG25)
 
 Web development:
 - Wilma Reistad (WU25)
