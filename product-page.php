@@ -2,7 +2,6 @@
 require __DIR__ . "/header.php";
 require __DIR__ . '/ten-percent.php';
 require __DIR__ . "/data.php";
-require __DIR__ . "/datacopy.php";
 
 // 1️⃣ Kontrollera att "product" finns i URL
 ?>
@@ -13,16 +12,29 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
     $product = $products[$productName];
     $colors = $product['colors'];
 
-    // Standardfärg (första färgen)
-    $firstColor = array_key_first($colors);
-    $currentImages = $colors[$firstColor]['images'];
-?>
+    // Hämta vald färg från URL, annars första färgen
+    $selectedColor = $_GET['color'] ?? array_key_first($colors);
 
+    // Säkerställ att vald färg finns
+    if (!isset($colors[$selectedColor])) {
+        $selectedColor = array_key_first($colors);
+    }
+
+    $currentImages = $colors[$selectedColor]['images'];
+?>
     <section class="product-page-hero">
         <div class="product-cont">
             <section class="product-images">
-                <?php foreach ($currentImages as $imageKey => $imagePath) { ?>
-                    <img src="<?= $imagePath; ?>" alt="<?= $productName; ?> <?= $imageKey; ?>" />
+                <?php
+                $total = count($currentImages);
+                $index = 1; // räknare
+
+                foreach ($currentImages as $imageKey => $imagePath) { ?>
+                    <div class="image-wrapper">
+                        <img src="<?= $imagePath; ?>" alt="<?= $productName; ?> <?= $imageKey; ?>" />
+                        <div class="page-number"><?= $index ?>/<?= $total ?></div>
+                    </div>
+                    <?php $index++; ?>
                 <?php } ?>
             </section>
 
@@ -30,11 +42,38 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
                 <h2><?= $productName; ?></h2>
                 <p class="prize"><?= $product['prize']; ?></p>
                 <p class="name"><?= $product['description']; ?></p>
-                <div class="color-picker-cont">
-                    <?php
-                    require __DIR__ . "/test.php";
-                    ?>
-                </div>
+
+                <?php if (count($colors) > 1) { ?>
+                    <div class="color-picker-cont">
+                        <section class="color-choice">
+                            <div class="colors">
+                                <p>Färg</p>
+                                <div class="color-buttons">
+                                    <?php foreach ($colors as $colorKey => $colorData) { ?>
+                                        <a href="?product=<?= urlencode($productName); ?>&color=<?= urlencode($colorKey); ?>"
+                                            class="color-btn <?= $colorKey; ?> <?= $colorKey === $selectedColor ? 'active' : ''; ?>">
+                                            <span><?= $colorData['name']; ?></span>
+                                        </a>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                            <div class="guide">
+                                <div class="guide-size">
+                                    <p>Storlek</p>
+                                    <a>Guide</a>
+                                </div>
+                                <div class="size-button">
+                                    <button>XS</button>
+                                    <button>S</button>
+                                    <button>M</button>
+                                    <button>L</button>
+                                    <button>XL</button>
+                                </div>
+                            </div>
+                            <button class="basket">Lägg i varukorgen</button>
+                        </section>
+                    </div>
+                <?php } ?>
             </section>
         </div>
     </section>
@@ -48,17 +87,17 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
 
             <div class="product-carousel">
                 <?php
-                foreach ($products as $product => $value) { ?>
+                foreach ($products as $prodKey => $prodValue) { ?>
                     <section class="product">
-                        <a href="product-page.php?product=<?= urlencode($product); ?>" class="product-link">
+                        <a href="product-page.php?product=<?= urlencode($prodKey); ?>" class="product-link">
                             <div class="product-image-wrapper">
-                                <img src="<?= $value['images']['default']; ?>" class="product-img-default" alt="<?= $product; ?>" />
-                                <img src="<?= $value['images']['hover']; ?>" class="product-img-hover" alt="<?= $product; ?>" />
+                                <img src="<?= $prodValue['images']['default']; ?>" class="product-img-default" alt="<?= $prodKey; ?>" />
+                                <img src="<?= $prodValue['images']['hover']; ?>" class="product-img-hover" alt="<?= $prodKey; ?>" />
                             </div>
                         </a>
                         <div class="product-info">
-                            <p class="name"><?= $product; ?></p>
-                            <p class="prize"><?= $value['prize']; ?></p>
+                            <p class="name"><?= $prodKey; ?></p>
+                            <p class="prize"><?= $prodValue['prize']; ?></p>
                         </div>
                     </section>
                 <?php } ?>
@@ -66,46 +105,10 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
         </div>
     </section>
 
-
-    <script>
-        const productColors = <?= json_encode($product['colors']); ?>;
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const imgElements = document.querySelectorAll(".product-images img");
-            const colorButtons = document.querySelectorAll(".color-buttons button");
-
-            const colorMap = {
-                'signal': 'orange',
-                'ormbunke': 'green',
-                'salvia': 'white'
-            };
-
-            // Markera första färgen som aktiv vid sidladdning
-            if (colorButtons.length > 0) colorButtons[0].classList.add("active-color");
-
-            colorButtons.forEach(button => {
-                button.addEventListener("click", () => {
-                    const colorKey = Object.keys(colorMap).find(c => button.classList.contains(c));
-                    if (!colorKey) return;
-
-                    const dataKey = colorMap[colorKey];
-                    const colorData = productColors[dataKey];
-                    if (!colorData) return;
-
-                    Object.values(colorData.images).forEach((src, index) => {
-                        if (imgElements[index]) imgElements[index].src = src;
-                    });
-
-                    colorButtons.forEach(btn => btn.classList.remove("active-color"));
-                    button.classList.add("active-color");
-                });
-            });
-        });
-    </script>
-
 <?php
 } else {
     echo "<p>Produkten hittades inte.</p>";
 }
+
+require __DIR__ . '/newsletter.php';
+require __DIR__ . '/footer.php';

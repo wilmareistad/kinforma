@@ -12,6 +12,7 @@ $products = [
         ],
         'colors' => [
             'orange' => [
+                'name' => 'Signal',
                 'images' => [
                     'img1' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_1.png',
                     'img2' => 'assets/Jackor/thermal/orange/Thermal_Jacket_Orange_2.png',
@@ -20,6 +21,7 @@ $products = [
                 ],
             ],
             'green' => [
+                'name' => 'Ormbunke',
                 'images' => [
                     'img1' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_1.png',
                     'img2' => 'assets/Jackor/thermal/grön/Thermal_Jacket_Green_2.png',
@@ -42,6 +44,7 @@ $products = [
         ],
         'colors' => [
             'orange' => [
+                'name' => 'Signal',
                 'images' => [
                     'img1' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_1.png',
                     'img2' => 'assets/Jackor/puffer/orange/Puffer_Jacket_Orange_2.png',
@@ -50,6 +53,7 @@ $products = [
                 ],
             ],
             'green' => [
+                'name' => 'Ormbunke',
                 'images' => [
                     'img1' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_1.png',
                     'img2' => 'assets/Jackor/puffer/grön/Puffer_Jacket_Green_2.png',
@@ -71,6 +75,7 @@ $products = [
         ],
         'colors' => [
             'orange' => [
+                'name' => 'Signal',
                 'images' => [
                     'img1' => 'assets/flaskor/orange/Water_Bottle_Orange_1.png',
                     'img2' => 'assets/flaskor/orange/Water_Bottle_Orange_2.png',
@@ -79,6 +84,7 @@ $products = [
                 ],
             ],
             'green' => [
+                'name' => 'Ormbunke',
                 'images' => [
                     'img1' => 'assets/flaskor/grön/Water_Bottle_Green_1.png',
                     'img2' => 'assets/flaskor/grön/Water_Bottle_Green_2.png',
@@ -87,6 +93,7 @@ $products = [
                 ],
             ],
             'white' => [
+                'name' => 'Snö',
                 'images' => [
                     'img1' => 'assets/flaskor/vit/Water_Bottle_White_1.png',
                     'img2' => 'assets/flaskor/vit/Water_Bottle_White_2.png',
@@ -108,6 +115,7 @@ $products = [
         ],
         'colors' => [
             'white' => [
+                'name' => 'Snö',
                 'images' => [
                     'img1' => 'assets/solkräm/Sunscreen_1.png',
                     'img2' => 'assets/solkräm/Sunscreen_2.png',
@@ -130,6 +138,7 @@ $products = [
         ],
         'colors' => [
             'orange' => [
+                'name' => 'Signal',
                 'images' => [
                     'img1' => 'assets/karbinhake/Orange/Carbiner_Orange_1.png',
                     'img2' => 'assets/karbinhake/Orange/Carbiner_Orange_2.png',
@@ -138,6 +147,7 @@ $products = [
                 ],
             ],
             'green' => [
+                'name' => 'Ormbunke',
                 'images' => [
                     'img1' => 'assets/karbinhake/Grön/Carbiner_Green_1.png',
                     'img2' => 'assets/karbinhake/Grön/Carbiner_Green_2.png',
@@ -146,6 +156,7 @@ $products = [
                 ],
             ],
             'silver' => [
+                'name' => 'Stjärna',
                 'images' => [
                     'img1' => 'assets/karbinhake/Silver/Carbiner_Silver_1.png',
                     'img2' => 'assets/karbinhake/Silver/Carbiner_Silver_2.png',
@@ -167,6 +178,7 @@ $products = [
         ],
         'colors' => [
             'orange' => [
+                'name' => 'Signal',
                 'images' => [
                     'img1' => 'assets/flaskvärmare/orange/Water_Bottle_Heater_Orange_1.png',
                     'img2' => 'assets/flaskvärmare/orange/Water_Bottle_Heater_Orange_2.png',
@@ -175,6 +187,7 @@ $products = [
                 ],
             ],
             'green' => [
+                'name' => 'Ormbunke',
                 'images' => [
                     'img1' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_1.png',
                     'img2' => 'assets/flaskvärmare/grön/Water_Bottle_Heater_Green_2.png',
@@ -183,6 +196,7 @@ $products = [
                 ],
             ],
             'white' => [
+                'name' => 'Snö',
                 'images' => [
                     'img1' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White1.png',
                     'img2' => 'assets/flaskvärmare/vit/Water_Bottle_Heater_White_Closeup_2.png',
@@ -204,6 +218,7 @@ $products = [
         ],
         'colors' => [
             'white' => [
+                'name' => 'Snö',
                 'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',
@@ -225,6 +240,7 @@ $products = [
         ],
         'colors' => [
             'white' => [
+                'name' => 'Snö',
                 'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',
@@ -246,6 +262,7 @@ $products = [
         ],
         'colors' => [
             'orange' => [
+                'name' => 'Signal',
                 'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',
@@ -254,6 +271,7 @@ $products = [
                 ],
             ],
             'green' => [
+                'name' => 'Ormbunke',
                 'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',
@@ -275,6 +293,7 @@ $products = [
         ],
         'colors' => [
             'orange' => [
+                'name' => 'Signal',
                 'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',
@@ -283,6 +302,7 @@ $products = [
                 ],
             ],
             'green' => [
+                'name' => 'Ormbunke',
                 'images' => [
                     'img1' => 'assets/',
                     'img2' => 'assets/',

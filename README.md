@@ -7,9 +7,9 @@ Digital design:
 - Nils Birgersson (DD25)
 
 Computer graphics design:
-- Simon (CG25)
-- Linnea (CG25)
-- Jonathan (CG25)
+- Simon Torstensson (CG25)
+- Linnéa Olofsson (CG25)
+- Jonatan Jonsson (CG25)
 
 Web development:
 - Wilma Reistad (WU25)

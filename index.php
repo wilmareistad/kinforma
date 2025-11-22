@@ -12,7 +12,7 @@ require __DIR__ . '/data.php';
         <p>Th&oslash</p>
         <p>Th&oslash</p>
     </div>
-    <a href="/collection.php" class="hero-img-link">
+    <a href="collection.php" class="hero-img-link">
         <img src="assets/KinformaAnimation.gif">
     </a>
 </section>

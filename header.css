@@ -146,6 +146,10 @@ header {
     }
     
   }
+
+  .nav a:first-of-type {
+    padding-top: 2rem;
+  }
   
   .container
   {
