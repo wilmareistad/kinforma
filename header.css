@@ -87,11 +87,11 @@ header {
     top: 0; 
     left: 0;
     width: 100vw; /* hela bredden */
-    height: 30vh; /* halva skärmhöjden */
+    /*height: 30vh; /* halva skärmhöjden */
     background-color: var(--background-color);
     border: none;
     border-bottom: 2px solid var(--accent-color);
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
     z-index: 15;
     justify-content: center;
@@ -120,6 +120,8 @@ header {
   /* Visa meny när checkbox markerad */
   #menu-toggle:checked ~ .nav {
     display: flex;
+    align-items: flex-end;
+    padding: 40px;
   }
   
   /* Hamburger → X */
@@ -139,7 +141,15 @@ header {
   @media (min-width: 48rem) {
     .menu-icon {
       display: flex;
+      align-self: flex-start;
+      justify-content: space-around;
     }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+  }
     
     .nav a {
       padding: 0 1rem;
@@ -148,7 +158,7 @@ header {
   }
 
   .nav a:first-of-type {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   
   .container
@@ -209,7 +219,7 @@ header {
           top: 0; 
           left: 0;
           width: 100vw; /* hela bredden */
-          height: 50vh; /* halva skärmhöjden */
+          /*height: 50vh; /* halva skärmhöjden */
           background-color: var(--background-color);
           border: none;
           border-bottom: 2px solid var(--accent-color);
@@ -220,6 +230,11 @@ header {
           align-items: center;
           gap: 1rem;
         }}
+
+        .nav-links {
+      display: flex;
+      flex-direction: column;
+        }
         
         .backpack{
           margin-right: 28px;
