@@ -12,7 +12,7 @@
 
 .color-buttons {
   display: flex;
-  gap: 16px;
+  gap: 4px; /*16px enligt design*/
   width: 100%;
 }
 
