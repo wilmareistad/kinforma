@@ -10,7 +10,7 @@ require __DIR__ . '/ten-percent.php';
     <section class="container-about">
         <div class="about-hero">
             <p class="klubb-kin">Våra arbetsätt</p>
-            <img class="team" src="assets/Hero_PW1_Gräslandskap.png" alt="bild på landskap">
+            <img class="team" src="assets/Kinforma_Hero_Final.png" alt="bild på landskap">
             <!-- <button>Våra arbetsätt</button> -->
         </div>
     </section>
@@ -29,8 +29,8 @@ require __DIR__ . '/ten-percent.php';
         </div>
     </section>
     <div class="smart-textil-container">
-        <img src="https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=1200,h=635,q=80/sites/www.builtin.com/files/2024-11/smart-textile.jpg" alt="bild på teamet">
-        <img src="https://img.freepik.com/premium-photo/rough-blue-fabric-texture-cotton-knitted-fabric-modern-waterproof-flexible-temperature-control-materials-multifunctional-smart-textile-closeup-selective-focus-does-tear_309665-2265.jpg" alt="bild på teamet">
+        <img src="assets/Material_View_Green.png" alt="bild på teamet">
+        <img src="assets/Material_View_Orange.png" alt="bild på teamet">
     </div>
 </main>
 <?php
