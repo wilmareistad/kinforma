@@ -213,17 +213,17 @@ $products = [
         'prize' => '399 kr',
         'category' => 'beauty',
         'images' => [
-            'default' => 'assets/',
-            'hover' => 'assets/',
+            'default' => 'assets/Sunstick/4.Gemini_Generated_sunstick.jpg',
+            'hover' => 'assets/Sunstick/1.sunstick_front.jpg',
         ],
         'colors' => [
             'white' => [
                 'name' => 'Snö',
                 'images' => [
-                    'img1' => 'assets/',
-                    'img2' => 'assets/',
-                    'img3' => 'assets/',
-                    'img4' => 'assets/',
+                    'img1' => 'assets/Sunstick/1.sunstick_front.jpg',
+                    'img2' => 'assets/Sunstick/2.sunstick_back_alone.jpg',
+                    'img3' => 'assets/Sunstick/3.sunstick_side.jpg',
+                    'img4' => 'assets/Sunstick/4.Gemini_Generated_sunstick.jpg',
                 ]
             ]
         ]
@@ -235,17 +235,17 @@ $products = [
         'prize' => '299 kr',
         'category' => 'beauty',
         'images' => [
-            'default' => 'assets/',
-            'hover' => 'assets/',
+            'default' => 'assets/Handkräm/3.Gemini_Generated_handcream.jpg',
+            'hover' => 'assets/Handkräm/1.handcream_front_alone.jpg',
         ],
         'colors' => [
             'white' => [
                 'name' => 'Snö',
                 'images' => [
-                    'img1' => 'assets/',
-                    'img2' => 'assets/',
-                    'img3' => 'assets/',
-                    'img4' => 'assets/',
+                    'img1' => 'assets/Handkräm/1.handcream_front_alone.jpg',
+                    'img2' => 'assets/Handkräm/2.Handcream_plus_package_front.jpg',
+                    'img3' => 'assets/Handkräm/4.handcream_side_alone.jpg',
+                    'img4' => 'assets/Handkräm/3.Gemini_Generated_handcream.jpg',
                 ]
             ]
         ]
@@ -257,57 +257,26 @@ $products = [
         'prize' => '899 kr',
         'category' => 'accessoarer',
         'images' => [
-            'default' => 'assets/',
-            'hover' => 'assets/',
+            'default' => 'assets/Solglasögon/Vita/Gemini_Generated_brillor_vit.jpg',
+            'hover' => 'assets/Solglasögon/Vita/vit_brillor_front.jpg',
         ],
         'colors' => [
-            'orange' => [
-                'name' => 'Signal',
+            'white' => [
+                'name' => 'Snö',
                 'images' => [
-                    'img1' => 'assets/',
-                    'img2' => 'assets/',
-                    'img3' => 'assets/',
-                    'img4' => 'assets/',
+                    'img1' => 'assets/Solglasögon/Vita/vit_brillor_front.jpg',
+                    'img2' => 'assets/Solglasögon/Vita/vit_brillor_side.jpg',
+                    'img3' => 'assets/Solglasögon/Vita/vit_brillor_closeup_logga.jpg',
+                    'img4' => 'assets/Solglasögon/Vita/Gemini_Generated_brillor_vit.jpg',
                 ],
             ],
             'green' => [
                 'name' => 'Ormbunke',
                 'images' => [
-                    'img1' => 'assets/',
-                    'img2' => 'assets/',
-                    'img3' => 'assets/',
-                    'img4' => 'assets/',
-                ],
-            ],
-        ],
-    ],
-
-    'HUVA' => [ //benie
-        'name' => 'HUVA',
-        'description' => 'En varm och slitstark mössa som håller vinden ute. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
-        'prize' => '339 kr',
-        'category' => 'accessoarer',
-        'images' => [
-            'default' => 'assets/',
-            'hover' => 'assets/',
-        ],
-        'colors' => [
-            'orange' => [
-                'name' => 'Signal',
-                'images' => [
-                    'img1' => 'assets/',
-                    'img2' => 'assets/',
-                    'img3' => 'assets/',
-                    'img4' => 'assets/',
-                ],
-            ],
-            'green' => [
-                'name' => 'Ormbunke',
-                'images' => [
-                    'img1' => 'assets/',
-                    'img2' => 'assets/',
-                    'img3' => 'assets/',
-                    'img4' => 'assets/',
+                    'img1' => 'assets/Solglasögon/Gröna/svart_brillor_front.jpg',
+                    'img2' => 'assets/Solglasögon/Gröna/svart_brillor_side.jpg',
+                    'img3' => 'assets/Solglasögon/Gröna/svart_brillor_closeup_logga.jpg',
+                    'img4' => 'assets/Solglasögon/Gröna/Gemini_Generated_brillor_svart.jpg',
                 ],
             ],
         ],
