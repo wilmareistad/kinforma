@@ -258,6 +258,18 @@ a.hero-img-link {
   opacity: 1;
 }
 
+@supports (-webkit-hyphens:none) {
+  .product {
+    width: min(312px, 85vw);
+  }
+  
+  .product-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+}
+
 .product-info {
   display: flex;
   flex-direction: column;
