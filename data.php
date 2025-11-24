@@ -213,7 +213,7 @@ $products = [
         'prize' => '399 kr',
         'category' => 'beauty',
         'images' => [
-            'default' => 'assets/Sunstick/4.Gemini_Generated_sunstick.jpg',
+            'default' => 'assets/Sunstick/Gemini_Generated_sunstick.jpg',
             'hover' => 'assets/Sunstick/1.sunstick_front.jpg',
         ],
         'colors' => [
@@ -243,9 +243,9 @@ $products = [
                 'name' => 'Snö',
                 'images' => [
                     'img1' => 'assets/Handkräm/1.handcream_front_alone.jpg',
-                    'img2' => 'assets/Handkräm/2.Handcream_plus_package_front.jpg',
+                    'img2' => 'assets/Handkräm/rework_handcream_PlusPackage.jpg',
                     'img3' => 'assets/Handkräm/4.handcream_side_alone.jpg',
-                    'img4' => 'assets/Handkräm/3.Gemini_Generated_handcream.jpg',
+                    'img4' => 'assets/Handkräm/rework_zoomout_Gemini_Generated_handcream.jpg',
                 ]
             ]
         ]
@@ -266,7 +266,7 @@ $products = [
                 'images' => [
                     'img1' => 'assets/Solglasögon/Vita/vit_brillor_front.jpg',
                     'img2' => 'assets/Solglasögon/Vita/vit_brillor_side.jpg',
-                    'img3' => 'assets/Solglasögon/Vita/vit_brillor_closeup_logga.jpg',
+                    'img3' => 'assets/Solglasögon/Vita/rework_vita_brillor_closeup.jpg',
                     'img4' => 'assets/Solglasögon/Vita/Gemini_Generated_brillor_vit.jpg',
                 ],
             ],
@@ -275,7 +275,7 @@ $products = [
                 'images' => [
                     'img1' => 'assets/Solglasögon/Gröna/svart_brillor_front.jpg',
                     'img2' => 'assets/Solglasögon/Gröna/svart_brillor_side.jpg',
-                    'img3' => 'assets/Solglasögon/Gröna/svart_brillor_closeup_logga.jpg',
+                    'img3' => 'assets/Solglasögon/rework_svarta_brillor_closeup.jpg',
                     'img4' => 'assets/Solglasögon/Gröna/Gemini_Generated_brillor_svart.jpg',
                 ],
             ],
