@@ -43,7 +43,7 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
                 <p class="prize"><?= $product['prize']; ?></p>
                 <p class="name"><?= $product['description']; ?></p>
 
-                <?php if (count($colors) > 1) { ?>
+                <?php if (count($colors) > 0) { ?>
                     <div class="color-picker-cont">
                         <section class="color-choice">
                             <div class="colors">
