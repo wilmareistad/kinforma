@@ -1,17 +1,13 @@
 <?php
-
 require __DIR__ . "/header.php";
 require __DIR__ . '/ten-percent.php';
-
 ?>
-<!-- // länken till css ska tas bort när den är kopplad till index -->
-<link rel="stylesheet" href="about.css">
+
 <main class="about-main">
     <section class="container-about">
         <div class="about-hero">
             <p class="klubb-kin">Våra arbetsätt</p>
             <img class="team" src="assets/Kinforma_Hero_Final.png" alt="bild på landskap">
-            <!-- <button>Våra arbetsätt</button> -->
         </div>
     </section>
     <section class="about-info">
@@ -36,5 +32,3 @@ require __DIR__ . '/ten-percent.php';
 <?php
 require __DIR__ . "/newsletter.php";
 require __DIR__ . "/footer.php";
-
-//antingen section med läs mer som dyker upp under, eller en egen sida vid klick på läs mer

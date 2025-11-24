@@ -2,8 +2,6 @@
 require __DIR__ . "/header.php";
 require __DIR__ . '/ten-percent.php';
 require __DIR__ . "/data.php";
-
-// 1️⃣ Kontrollera att "product" finns i URL
 ?>
 
 <?php
@@ -12,10 +10,8 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
     $product = $products[$productName];
     $colors = $product['colors'];
 
-    // Hämta vald färg från URL, annars första färgen
     $selectedColor = $_GET['color'] ?? array_key_first($colors);
 
-    // Säkerställ att vald färg finns
     if (!isset($colors[$selectedColor])) {
         $selectedColor = array_key_first($colors);
     }
@@ -27,7 +23,7 @@ if (isset($_GET['product']) && isset($products[$_GET['product']])) {
             <section class="product-images">
                 <?php
                 $total = count($currentImages);
-                $index = 1; // räknare
+                $index = 1;
 
                 foreach ($currentImages as $imageKey => $imagePath) { ?>
                     <div class="image-wrapper">

@@ -17,8 +17,6 @@
     width: 100vw;
 }
 
-
-
 .klubb-kin {
 color: var(--background-color, #FFFDF8);
 text-align: center;
@@ -32,8 +30,6 @@ position: absolute;
 bottom: 37px;
 margin: 0;
 } 
-
-
 
 .about-hero {
     position: relative;
@@ -73,7 +69,6 @@ margin: 0;
 }
 
 .about-info h3, .about-info p {
-    /* width: 50vw; */
     width: 100%;
     max-width: 100%;
 }
@@ -97,7 +92,6 @@ margin: 0;
         gap: 128px 128px;
         max-width: 1200px; 
         margin: 128px auto;
-        /* align-items: start; */
     }
 
     .about-info h3, .about-info p {
@@ -117,5 +111,5 @@ margin: 0;
 
     .smart-textil-container img {
     max-height: 700px;
-}
+    }
 }

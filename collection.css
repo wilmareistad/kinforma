@@ -64,8 +64,6 @@
     top: 50%;
     transform: translateY(-50%);
     fill: var(--darkgreen, #1F2B28);
-    /*width: 18px;
-    height: 18px;*/
     flex-shrink: 0;
 }
 
@@ -119,15 +117,11 @@
 
 .sort-filter {
     display: flex;
-    /* width: 353px; */
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 16px; */
-    /*margin-top: 50px;*/
     margin-bottom: 20px;
 }
 
-/* Uppdaterad categories-box */
 .categories-box {
     display: flex;
     align-items: center;
@@ -209,7 +203,6 @@
     height: 100%;
 }
 
-
 .filter-item {
     display: block;
     padding: 12px 16px;
@@ -251,13 +244,12 @@
     gap: 8px 2px;
     flex-shrink: 0;
     flex-wrap: wrap;
-    /* width: 100vw; */
 }
 
 .product-card {
     background: var(--background-color, #FFFDF8);
     display: flex;
-    width: 100%; /*110vw för mobil?*/
+    width: 100%;
     align-items: flex-start;
     flex-shrink: 0;
     flex-wrap: wrap;
@@ -273,20 +265,16 @@
     text-decoration: none;
 }
 
-/*.product {
-    flex-shrink: 0;
-}*/
-
 .collection-img-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 1/1; /* Eller den ratio dina bilder har, t.ex. 1/1 för kvadrat */
+    aspect-ratio: 1/1;
     overflow: hidden;
     flex-shrink: 0;
 }
 
 .collection-img-wrapper img {
-    position: absolute; /* Viktigt! Båda bilderna ska vara absolute */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -311,14 +299,6 @@
 }
 
 .product-inform {
-    /*display: flex;
-    padding: 8px 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    align-self: stretch;
-    margin: 0px 16px 17px;*/
-
     display: flex;
     padding: 8px 16px 12px 16px;
     flex-direction: column;
@@ -341,21 +321,15 @@
 }
 
 .collection-product {
-    width: calc(50% - 1.5px); /* Hälften avbredden minus halva gap */
+    width: calc(50% - 1.5px);
     box-sizing: border-box;
 }
 
 .name-heart {
-    /*display: flex;
-    width: 163px;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;*/
-
     display: flex;
-justify-content: space-between;
-align-items: flex-start;
-align-self: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
 }
 
 .name-heart .name {
@@ -416,13 +390,12 @@ align-self: stretch;
     .tho-collection-frame h3 {
         font-size: 3rem;
         font-weight: 600;
-        line-height: 110%; /* 52.8px */
+        line-height: 110%;
         letter-spacing: -1.44px;
         text-transform: uppercase;
     }
 
     .tho-collection-frame p {
-        /*width: 710px;*/
         font-size: 1.25rem;
         display: flex;
         align-items: flex-end;
@@ -441,7 +414,6 @@ align-self: stretch;
     }
 }
 
-/* Tvingande centering - lägg sist i din CSS */
 .button {
   display: block !important;
   position: static !important;
@@ -456,21 +428,19 @@ align-self: stretch;
   background-color: var(--background-color);
 }
 
-
 @media(min-width: 344px){
     .button{
-    align-items: center;    
-    margin-left:150px;
-    margin-top: 150px;
-    width: 120px;
-    height: 37px;
-    border: 1px;
-    color: black;
-    background-color: var(--background-color);
-    border: 1px solid black;
-    padding: 8px 24px;    
-    gap: 4px;
-    font-size: 15px;
-
-}
+        align-items: center;    
+        margin-left:150px;
+        margin-top: 150px;
+        width: 120px;
+        height: 37px;
+        border: 1px;
+        color: black;
+        background-color: var(--background-color);
+        border: 1px solid black;
+        padding: 8px 24px;    
+        gap: 4px;
+        font-size: 15px;
+    }
 }
