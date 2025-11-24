@@ -129,6 +129,7 @@
   width: 32px;
   height: 100%;
   background-color: var(--orange);
+  border: 0;
 }
 
 .color-buttons .green:before {
@@ -137,6 +138,7 @@
   width: 32px;
   height: 100%;
   background-color: var(--darkgreen);
+  border: 0;
 }
 
 .color-buttons .white:before {
@@ -146,6 +148,7 @@
   height: 100%;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
+  border: 0;
 }
 
 .color-buttons .silver::before {
@@ -154,6 +157,7 @@
   width: 32px;
   height: 100%;
   background-color: silver;
+  border: 0;
 }
 
 /* Gamla färgklasser (behålls för bakåtkompatibilitet) */
