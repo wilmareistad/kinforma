@@ -69,7 +69,7 @@ $categoryFilter = strtolower($_GET['category'] ?? 'all');
             $foundProducts = 0;
 
             foreach ($products as $product => $value) {
-                $productName = strtolower($product);
+                $productName = strtolower(trim($value['söknamn']));
                 $productCategory = strtolower(trim($value['category']));
 
                 // Filtrera efter sökning

@@ -3,6 +3,7 @@
 $products = [
     'SKARE' => [ //Jacka thermal
         'name' => 'SKARE',
+        'söknamn' => 'Jacka',
         'description' => 'En rörlig och vindavstötande jacka som funkar i övergångsväder. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '3599 kr',
         'category' => 'kläder',
@@ -35,6 +36,7 @@ $products = [
 
     'FROST' => [ //Jacka 2 puffer
         'name' => 'FROST',
+        'söknamn' => 'Jacka',
         'description' => 'En varm och slitstark teknisk jacka som står emot vind och kyla. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '4499 kr',
         'category' => 'kläder',
@@ -66,6 +68,7 @@ $products = [
 
     'KÄLLA' => [ //Flaska
         'name' => 'KÄLLA',
+        'söknamn' => 'Flaska',
         'description' => 'En tålig och isolerande vattenflaska som håller rätt temperatur. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '399 kr',
         'category' => 'merch',
@@ -106,6 +109,7 @@ $products = [
 
     'LJUS' => [ //Solkräm
         'name' => 'LJUS',
+        'söknamn' => 'Solkräm',
         'description' => 'En effektiv och långvarig solkräm som skyddar i skiftande ljus. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '79 kr',
         'category' => 'beauty',
@@ -129,6 +133,7 @@ $products = [
 
     'FÄSTE' => [ //Karbinhake
         'name' => 'FÄSTE',
+        'söknamn' => 'Karbinhake',
         'description' => 'En robust och pålitlig karbinhake som tål kyla och fukt. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '199 kr',
         'category' => 'merch',
@@ -169,6 +174,7 @@ $products = [
 
     'VÄRM' => [ //flaskvärmare
         'name' => 'VÄRM',
+        'söknamn' => 'Flaskvärmare',
         'description' => 'En isolerande flaskvärmare som behåller värmen länge. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '399 kr',
         'category' => 'teknik',
@@ -209,6 +215,7 @@ $products = [
 
     'FJÄLLSOL' => [ //sunstick
         'name' => 'FJÄLLSOL',
+        'söknamn' => 'Sunstick',
         'description' => 'En kompakt och kraftfull sunstick som skyddar i starkt solljus. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '399 kr',
         'category' => 'beauty',
@@ -231,6 +238,7 @@ $products = [
 
     'MOSSA' => [ //handkräm
         'name' => 'MOSSA',
+        'söknamn' => 'Handkräm',
         'description' => 'En mjukgörande och skyddande handkräm för kallt klimat. Lätt, hållbar och gjord för aktiva dagar när vinter möter vår.',
         'prize' => '299 kr',
         'category' => 'beauty',
@@ -253,6 +261,7 @@ $products = [
 
     'SKIMMER' => [ //solglasögon
         'name' => 'SKIMMER',
+        'söknamn' => 'Solglasögon',
         'description' => 'Skyddande och klara linser som fungerar i växlande ljus. Lätta, hållbara och gjorda för aktiva dagar när vinter möter vår.',
         'prize' => '899 kr',
         'category' => 'accessoarer',
