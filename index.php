@@ -19,7 +19,7 @@ require __DIR__ . '/data.php';
 
 <section class="about">
     <div class="text-box">
-        <h3>FRAMTIDENS MODE, <span class="special">IDAG</span><span class="orange">.</span></h3>
+        <h3>framtidens mode, <span class="special">idag</span><span class="orange">.</span></h3>
     </div>
     <div class="description-box">
         <p>Upplev en ny dimension av mode med vår senaste kollektion Thø. Designad av dig, drivet av teknik, skapat för planeten.</p>

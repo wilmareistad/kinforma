@@ -134,6 +134,7 @@ a.hero-img-link {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .about h3 .orange {
